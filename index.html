@@ -8,24 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="theme-switcher.js" defer></script>
 </head>
 <body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
     <header>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <img src="ADNP1-removebg-preview.png" alt="ADNP logo">
+                    <a href="#" onclick="window.location.href='index.html'; return false;">
+                        <img src="ADNP1-removebg-preview.png" alt="ADNP logo">
+                    </a>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Naše služby</a>
+                        <a href="#services" class="nav-link">Naše služby</a>
                         <div class="dropdown-content">
                             <a href="sluzby/fuze-a-akvizice.html">Fúze a akvizice</a>
                             <a href="sluzby/podnikove-poradenstvi.html">Podnikové poradenství a oceňování</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Odvětví</a>
+                        <a href="#industries" class="nav-link">Odvětví</a>
                         <div class="dropdown-content">
                             <a href="odvetvi/nemovitosti.html">Nemovitosti</a>
                             <a href="odvetvi/digitalni-technologie.html">Digitální Technologie a IT</a>
@@ -58,10 +67,6 @@
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="hero-background">
-                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Professional business team meeting" class="hero-bg-image">
-                <div class="hero-overlay"></div>
-            </div>
             <div class="hero-content">
                 <h1 class="hero-title">Vytváříme synergie v každé transakci</h1>
                 <p class="hero-description">
@@ -122,7 +127,7 @@
         </section>
 
         <!-- Služby Section -->
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <h2>SLUŽBY</h2>
                 <div class="services-grid">
@@ -151,11 +156,7 @@
         </section>
 
         <!-- Odvětví Section -->
-        <section class="industries">
-            <div class="industries-background">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Modern business skyline" class="industries-bg-image">
-                <div class="industries-overlay"></div>
-            </div>
+        <section class="industries" id="industries">
             <div class="container">
                 <div class="industries-header">
                     <h2>ODVĚTVÍ</h2>
@@ -165,9 +166,7 @@
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80" alt="Real Estate" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/building.svg" alt="Nemovitosti" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/building.svg" alt="Nemovitosti" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
                             <h4><a href="odvetvi/nemovitosti.html">Nemovitosti</a></h4>
@@ -177,69 +176,57 @@
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="Technology and IT" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/device-desktop.svg" alt="Digitální technologie" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/device-desktop.svg" alt="IT" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
-                            <h4><a href="odvetvi/digitalni-technologie.html">Digitální Technologie a IT</a></h4>
+                            <h4><a href="odvetvi/digitalni-technologie.html">IT</a></h4>
                             <p>Software, AI, cloudové služby a inovace</p>
                         </div>
                     </div>
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Retail and Commerce" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/shopping-cart.svg" alt="Obchod a retail" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/shopping-cart.svg" alt="Retail" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
-                            <h4><a href="odvetvi/obchod-retail.html">Obchod a retail</a></h4>
+                            <h4><a href="odvetvi/obchod-retail.html">Retail</a></h4>
                             <p>E-commerce, maloobchod a distribuce</p>
                         </div>
                     </div>
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Transportation and Logistics" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/truck.svg" alt="Doprava a logistika" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/truck.svg" alt="Logistika" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
-                            <h4><a href="odvetvi/doprava-logistika.html">Doprava a logistika</a></h4>
-                            <p>Logistické řešení a supply chain</p>
+                            <h4><a href="odvetvi/doprava-logistika.html">Logistika</a></h4>
+                            <p>Doprava, skladování a supply chain</p>
                         </div>
                     </div>
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&w=800&q=80" alt="Healthcare" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/hospital.svg" alt="Zdravotnictví" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/hospital.svg" alt="Zdravotnictví" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
                             <h4><a href="odvetvi/zdravotnictvi.html">Zdravotnictví</a></h4>
-                            <p>Zdravotnické služby a medicínské technologie</p>
+                            <p>Medicína, farmacie a zdravotní technologie</p>
                         </div>
                     </div>
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Food and Beverage" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/restaurant.svg" alt="Gastro, potravinářství a nápoje" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/restaurant.svg" alt="Gastro" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
-                            <h4><a href="odvetvi/gastro-potravinari.html">Gastro, potravinářství a nápoje</a></h4>
-                            <p>Restaurace, výroba potravin a nápojů</p>
+                            <h4><a href="odvetvi/gastro-potravinari.html">Gastro</a></h4>
+                            <p>Restaurace, potravinářství a nápoje</p>
                         </div>
                     </div>
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80" alt="Cryptocurrency" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/bitcoin.svg" alt="Kryptoměny" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/bitcoin.svg" alt="Kryptoměny" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
                             <h4><a href="odvetvi/kryptomeny.html">Kryptoměny</a></h4>
@@ -249,97 +236,81 @@
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Financial Services" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/currency-dollar.svg" alt="Finanční služby" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/currency-dollar.svg" alt="Finance" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
-                            <h4><a href="odvetvi/financni-sluzby.html">Finanční služby</a></h4>
+                            <h4><a href="odvetvi/financni-sluzby.html">Finance</a></h4>
                             <p>Bankovnictví, pojišťovnictví a fintech</p>
                         </div>
                     </div>
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Construction and Development" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/building-2.svg" alt="Stavebnictví a development" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/building-2.svg" alt="Stavebnictví" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
-                            <h4><a href="odvetvi/stavebnictvi.html">Stavebnictví a development</a></h4>
-                            <p>Stavební projekty a infrastrukturní rozvoj</p>
+                            <h4><a href="odvetvi/stavebnictvi.html">Stavebnictví</a></h4>
+                            <p>Development, infrastruktura a výstavba</p>
                         </div>
                     </div>
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=80" alt="Automotive Industry" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/car.svg" alt="Automobilový průmysl" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/car.svg" alt="Automotive" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
-                            <h4><a href="odvetvi/automobilovy-prumysl.html">Automobilový průmysl</a></h4>
-                            <p>Výroba vozidel a automobilové komponenty</p>
+                            <h4><a href="odvetvi/automobilovy-prumysl.html">Automotive</a></h4>
+                            <p>Automobilový průmysl a komponenty</p>
                         </div>
                     </div>
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Materials and Mining" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/pickaxe.svg" alt="Materiály a těžební průmysl" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/pickaxe.svg" alt="Těžba" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
-                            <h4><a href="odvetvi/materialy-tezba.html">Materiály a těžební průmysl</a></h4>
-                            <p>Těžba, zpracování surovin a materiály</p>
+                            <h4><a href="odvetvi/materialy-tezba.html">Těžba</a></h4>
+                            <p>Suroviny, materiály a zpracování</p>
                         </div>
                     </div>
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Corporate Services" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/briefcase.svg" alt="Podnikové služby" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/briefcase.svg" alt="B2B Služby" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
-                            <h4><a href="odvetvi/podnikove-sluzby.html">Podnikové služby</a></h4>
-                            <p>Konzultace, účetnictví a HR služby</p>
+                            <h4><a href="odvetvi/podnikove-sluzby.html">B2B Služby</a></h4>
+                            <p>Konzultace, účetnictví a HR</p>
                         </div>
                     </div>
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Manufacturing Industry" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/settings.svg" alt="Průmysl" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/settings.svg" alt="Průmysl" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
                             <h4><a href="odvetvi/prumysl.html">Průmysl</a></h4>
-                            <p>Výroba, automatizace a průmysl 4.0</p>
+                            <p>Výroba, automatizace a Průmysl 4.0</p>
                         </div>
                     </div>
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Energy and Fuel" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/bolt.svg" alt="Energetika a PHM" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/bolt.svg" alt="Energetika" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
-                            <h4><a href="odvetvi/energetika.html">Energetika a PHM</a></h4>
-                            <p>Obnovitelné zdroje a energetické řešení</p>
+                            <h4><a href="odvetvi/energetika.html">Energetika</a></h4>
+                            <p>Obnovitelné zdroje a energetická řešení</p>
                         </div>
                     </div>
                     <div class="industry-item">
                         <div class="industry-image">
                             <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=800&q=80" alt="Infrastructure" class="industry-img">
-                            <div class="industry-overlay">
-                                <div class="industry-icon"><img src="icons/road.svg" alt="Infrastruktura" width="32" height="32"></div>
-                            </div>
+                            <div class="industry-icon"><img src="icons/road.svg" alt="Infrastruktura" width="48" height="48"></div>
                         </div>
                         <div class="industry-content">
                             <h4><a href="odvetvi/infrastruktura.html">Infrastruktura</a></h4>
-                            <p>Dopravní a telekomunikační infrastruktura</p>
+                            <p>Doprava, telekomunikace a Smart City</p>
                         </div>
                     </div>
                 </div>

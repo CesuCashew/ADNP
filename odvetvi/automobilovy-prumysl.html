@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automobilový průmysl - BIMINE a.s.</title>
+    <title>Automobilový průmysl - ADNP a.s.</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="../theme-switcher.js" defer></script>
 </head>
 <body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
     <header>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <a href="../index.html"><h1>BIMINE</h1></a>
+                    <a href="../index.html">
+                        <img src="../ADNP1-removebg-preview.png" alt="ADNP logo">
+                    </a>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Naše služby</a>
+                        <a href="../index.html#services" class="nav-link">Naše služby</a>
                         <div class="dropdown-content">
                             <a href="../sluzby/fuze-a-akvizice.html">Fúze a akvizice</a>
                             <a href="../sluzby/podnikove-poradenstvi.html">Podnikové poradenství a oceňování</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Odvětví</a>
+                        <a href="../index.html#industries" class="nav-link">Odvětví</a>
                         <div class="dropdown-content">
                             <a href="nemovitosti.html">Nemovitosti</a>
                             <a href="digitalni-technologie.html">Digitální Technologie a IT</a>
@@ -53,98 +65,45 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Automobilový průmysl</h1>
-                <p class="hero-description">
-                    Odvětví v dynamické transformaci směrem k elektromobilitě, 
-                    autonomní dopravě a udržitelným technologiím.
-                </p>
+        <section class="industry-hero">
+            <div class="industry-hero-image">
+                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2070&q=80" alt="Professional Automotive" class="hero-bg-image">
             </div>
         </section>
 
-        <section class="industry-content">
+        <section class="industry-content-section">
             <div class="container">
-                <div class="content-section">
-                    <h2>Naše filozofie</h2>
-                    <blockquote>
-                        "Automobilový průmysl prochází největší transformací od svých počátků. 
-                        Elektromobilita, autonomní řízení a nové modely mobility vytvářejí 
-                        jedinečné investiční příležitosti pro ty, kdo dokáží předvídat trendy."
-                    </blockquote>
-                    <p class="quote-author">- Jiří Heinrich, zakladatel BIMINE</p>
+                <div class="industry-title">
+                    <h1>Automobilový průmysl</h1>
                 </div>
-
-                <div class="content-section">
-                    <h2>Segmenty automobilového průmyslu, které pokrýváme</h2>
-                    <div class="sectors-grid">
-                        <div class="sector-item">
-                            <h3>Výrobci vozidel</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Dodavatelé komponentů</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Elektromobilita</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Autonomní systémy</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Nabíjecí infrastruktura</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Automotive software</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Polovodiče pro automotive</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Mobility-as-a-Service</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Recyklace vozidel</h3>
-                        </div>
+                
+                <div class="industry-intro">
+                    <h2>Specializujeme se na transakce v automobilovém průmyslu</h2>
+                    <p>Poskytujeme komplexní poradenství při fúzích a akvizicích v transformujícím se světě automobilového průmyslu, kde elektromobilita a autonomní technologie definují budoucnost mobility.</p>
+                </div>
+                
+                <div class="industry-details">
+                    <div class="industry-description">
+                        <h3>Revoluce v mobilitě</h3>
+                        <p>Automobilový průmysl prochází nejradikálnější transformací od svých počátků. Přechod na elektromobilitu, vývoj autonomních vozidel a nové modely mobility přetvářejí celé odvětví a vytvářejí bezprecedentní investiční příležitosti.</p>
+                        
+                        <p>V ADNP rozumíme složitostem této transformace a pomáháme našim klientům navigovat ve světě connected cars, battery technologií a mobility-as-a-service při vytváření synergií v každé transakci.</p>
                     </div>
-                </div>
-
-                <div class="content-section">
-                    <h2>Tržní perspektiva</h2>
-                    <p>
-                        Automobilový průmysl se nachází v období radikální transformace. 
-                        Přechod na elektromobilitu, vývoj autonomních vozidel a nové 
-                        modely sdílené mobility přetvářejí celé odvětví. Tradiční 
-                        automobilky investují masivně do nových technologií, zatímco 
-                        vznikají nové hráči specializující se na elektrická vozidla.
-                    </p>
-                </div>
-
-                <div class="content-section">
-                    <h2>Naše služby v automobilovém průmyslu</h2>
-                    <div class="services-list">
-                        <div class="service-item-detailed">
-                            <h3>M&A v automotive sektoru</h3>
-                            <p>Specializujeme se na fúze a akvizice v rychle se měnícím automobilovém průmyslu s důrazem na nové technologie.</p>
-                        </div>
-                        <div class="service-item-detailed">
-                            <h3>Oceňování technologických startupů</h3>
-                            <p>Expertní hodnocení společností zaměřených na elektromobilitu, autonomní řízení a connected car technologie.</p>
-                        </div>
-                        <div class="service-item-detailed">
-                            <h3>Strategické poradenství pro transformaci</h3>
-                            <p>Pomáháme tradičním automotive firmám navigovat přechodem k novým technologiím a obchodním modelům.</p>
-                        </div>
+                    
+                    <div class="industry-services">
+                        <h3>Co zvládáme</h3>
+                        <ul class="services-checklist">
+                            <li><span class="checkmark">✓</span> Výrobci vozidel</li>
+                            <li><span class="checkmark">✓</span> Elektromobilita</li>
+                            <li><span class="checkmark">✓</span> Autonomní systémy</li>
+                            <li><span class="checkmark">✓</span> Dodavatelé komponentů</li>
+                            <li><span class="checkmark">✓</span> Nabíjecí infrastruktura</li>
+                            <li><span class="checkmark">✓</span> Automotive software</li>
+                            <li><span class="checkmark">✓</span> Battery technology</li>
+                            <li><span class="checkmark">✓</span> Mobility služby</li>
+                            <li><span class="checkmark">✓</span> Connected cars</li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="content-section">
-                    <h2>Náš přístup</h2>
-                    <p>
-                        Rozumíme komplexnosti automotive ekosystému a jeho rychlé transformaci. 
-                        Naše analýzy zohledňují technologické trendy, regulatorní změny 
-                        a měnící se preference spotřebitelů. Pomáháme klientům identifikovat 
-                        příležitosti v této době změn.
-                    </p>
                 </div>
             </div>
         </section>
@@ -154,7 +113,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>BIMINE a.s.</h3>
+                    <h3>ADNP a.s.</h3>
                     <p>Opletalova 39, 110 00 Praha 1</p>
                     <p>Email: <a href="mailto:info@bimine.cz">info@bimine.cz</a></p>
                 </div>

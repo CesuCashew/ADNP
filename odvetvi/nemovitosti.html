@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nemovitosti - BIMINE a.s.</title>
+    <title>Nemovitosti - ADNP a.s.</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="../theme-switcher.js" defer></script>
 </head>
 <body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
     <header>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <a href="../index.html"><h1>BIMINE</h1></a>
+                    <a href="../index.html">
+                        <img src="../ADNP1-removebg-preview.png" alt="ADNP logo">
+                    </a>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Naše služby</a>
+                        <a href="../index.html#services" class="nav-link">Naše služby</a>
                         <div class="dropdown-content">
                             <a href="../sluzby/fuze-a-akvizice.html">Fúze a akvizice</a>
                             <a href="../sluzby/podnikove-poradenstvi.html">Podnikové poradenství a oceňování</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Odvětví</a>
+                        <a href="../index.html#industries" class="nav-link">Odvětví</a>
                         <div class="dropdown-content">
                             <a href="nemovitosti.html">Nemovitosti</a>
                             <a href="digitalni-technologie.html">Digitální Technologie a IT</a>
@@ -53,97 +65,47 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Nemovitosti</h1>
-                <p class="hero-description">
-                    Dynamický svět plný možností, který odráží ekonomické podmínky a reaguje na 
-                    měnící se vkus a potřeby společnosti.
-                </p>
+        <!-- Hero Section s fotografií -->
+        <section class="industry-hero">
+            <div class="industry-hero-image">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Professional Real Estate" class="hero-bg-image">
             </div>
         </section>
 
-        <section class="industry-content">
+        <!-- Content Section -->
+        <section class="industry-content-section">
             <div class="container">
-                <div class="content-section">
-                    <h2>Naše filozofie</h2>
-                    <blockquote>
-                        "V akvizicích nemovitostí věřím, že každá transakce je jedinečnou příležitostí. 
-                        Prostřednictvím analýzy a strategického rozhodnutí můžeme transformovat 
-                        nevyužité objekty v prosperující investice."
-                    </blockquote>
-                    <p class="quote-author">- Jiří Heinrich, zakladatel BIMINE</p>
+                <div class="industry-title">
+                    <h1>Nemovitosti</h1>
                 </div>
-
-                <div class="content-section">
-                    <h2>Sektory nemovitostí, které pokrýváme</h2>
-                    <div class="sectors-grid">
-                        <div class="sector-item">
-                            <h3>Komerční nemovitosti</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Hotely a rekreace</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Rezidenční komplexy</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Nákupní centra</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Průmyslové zóny</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Zemědělské pozemky</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Historické nemovitosti</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Investiční fondy nemovitostí</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Developmentské projekty</h3>
-                        </div>
+                
+                <div class="industry-intro">
+                    <h2>Specializujeme se na transakce v oblasti nemovitostí</h2>
+                    <p>Poskytujeme komplexní poradenství při fúzích a akvizicích v dynamickém světě nemovitostí, který odráží ekonomické podmínky a reaguje na měnící se potřeby trhu.</p>
+                </div>
+                
+                <div class="industry-details">
+                    <div class="industry-description">
+                        <h3>Dynamický svět plný možností</h3>
+                        <p>Trh s nemovitostmi představuje dynamický svět plný možností, který odráží ekonomické podmínky a reaguje na měnící se vkus a potřeby společnosti. Důraz je kladen na kvalitu staveb a energetickou náročnost, bezpečnost a ekologické hlediska.</p>
+                        
+                        <p>V ADNP se zaměřujeme na "vytváření synergií v každé transakci". Naším cílem je transformovat nemovitosti a otevírat nové obchodní příležitosti prostřednictvím strategické analýzy a hlubokého porozumění trhu.</p>
                     </div>
-                </div>
-
-                <div class="content-section">
-                    <h2>Tržní perspektiva</h2>
-                    <p>
-                        Trh s nemovitostmi představuje dynamický svět plný možností, který odráží 
-                        ekonomické podmínky a reaguje na měnící se vkus a potřeby společnosti. 
-                        Důraz je kladen na kvalitu staveb a energetickou náročnost, bezpečnost 
-                        a ekologické hlediska.
-                    </p>
-                </div>
-
-                <div class="content-section">
-                    <h2>Naše služby v oblasti nemovitostí</h2>
-                    <div class="services-list">
-                        <div class="service-item-detailed">
-                            <h3>Poradenství při fúzích a akvizicích</h3>
-                            <p>Komplexní analýza a strategické poradenství při nákupu a prodeji nemovitostí.</p>
-                        </div>
-                        <div class="service-item-detailed">
-                            <h3>Identifikace investičních příležitostí</h3>
-                            <p>Vyhledávání a hodnocení perspektivních nemovitostních investic.</p>
-                        </div>
-                        <div class="service-item-detailed">
-                            <h3>Strategické oceňování nemovitostí</h3>
-                            <p>Expertní posouzení hodnoty nemovitostí pro optimální rozhodování.</p>
-                        </div>
+                    
+                    <div class="industry-services">
+                        <h3>Co zvládáme</h3>
+                        <ul class="services-checklist">
+                            <li><span class="checkmark">✓</span> Komerční nemovitosti</li>
+                            <li><span class="checkmark">✓</span> Hotely a rekreace</li>
+                            <li><span class="checkmark">✓</span> Rezidenční komplexy</li>
+                            <li><span class="checkmark">✓</span> Nákupní centra</li>
+                            <li><span class="checkmark">✓</span> Průmyslové zóny</li>
+                            <li><span class="checkmark">✓</span> Zemědělské pozemky</li>
+                            <li><span class="checkmark">✓</span> Historické nemovitosti</li>
+                            <li><span class="checkmark">✓</span> Investiční fondy nemovitostí</li>
+                            <li><span class="checkmark">✓</span> Developmentské projekty</li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="content-section">
-                    <h2>Náš přístup</h2>
-                    <p>
-                        V BIMINE se zaměřujeme na "vytváření synergií v každé transakci". 
-                        Naším cílem je transformovat nemovitosti a otevírat nové obchodní 
-                        příležitosti prostřednictvím strategické analýzy a hlubokého 
-                        porozumění trhu.
-                    </p>
                 </div>
             </div>
         </section>
@@ -153,7 +115,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>BIMINE a.s.</h3>
+                    <h3>ADNP a.s.</h3>
                     <p>Opletalova 39, 110 00 Praha 1</p>
                     <p>Email: <a href="mailto:info@bimine.cz">info@bimine.cz</a></p>
                 </div>

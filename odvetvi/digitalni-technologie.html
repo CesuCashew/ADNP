@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digitální Technologie a IT - BIMINE a.s.</title>
+    <title>IT - ADNP a.s.</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="../theme-switcher.js" defer></script>
 </head>
 <body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
     <header>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <a href="../index.html"><h1>BIMINE</h1></a>
+                    <a href="../index.html">
+                        <img src="../ADNP1-removebg-preview.png" alt="ADNP logo">
+                    </a>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Naše služby</a>
+                        <a href="../index.html#services" class="nav-link">Naše služby</a>
                         <div class="dropdown-content">
                             <a href="../sluzby/fuze-a-akvizice.html">Fúze a akvizice</a>
                             <a href="../sluzby/podnikove-poradenstvi.html">Podnikové poradenství a oceňování</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Odvětví</a>
+                        <a href="../index.html#industries" class="nav-link">Odvětví</a>
                         <div class="dropdown-content">
                             <a href="nemovitosti.html">Nemovitosti</a>
                             <a href="digitalni-technologie.html">Digitální Technologie a IT</a>
@@ -53,87 +65,47 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Digitální Technologie a IT</h1>
-                <p class="hero-description">
-                    Rychle se rozvíjející sektor, který transformuje způsob podnikání 
-                    napříč všemi odvětvími ekonomiky.
-                </p>
+        <!-- Hero Section s fotografií -->
+        <section class="industry-hero">
+            <div class="industry-hero-image">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=2070&q=80" alt="Professional Technology" class="hero-bg-image">
             </div>
         </section>
 
-        <section class="industry-content">
+        <!-- Content Section -->
+        <section class="industry-content-section">
             <div class="container">
-                <div class="content-section">
-                    <h2>Technologické trendy</h2>
-                    <p>
-                        Sektor digitálních technologií a IT prochází neustálou transformací. 
-                        Nové technologie jako umělá inteligence, blockchain, cloud computing 
-                        a kybernetická bezpečnost vytváří nové obchodní příležitosti a mění 
-                        způsob, jakým společnosti fungují.
-                    </p>
+                <div class="industry-title">
+                    <h1>IT</h1>
                 </div>
-
-                <div class="content-section">
-                    <h2>Oblasti našeho zaměření</h2>
-                    <div class="sectors-grid">
-                        <div class="sector-item">
-                            <h3>Softwarové společnosti</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>E-commerce platformy</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Cloud služby</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Kybernetická bezpečnost</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Umělá inteligence</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Mobilní aplikace</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>IoT řešení</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Fintech</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Blockchain technologie</h3>
-                        </div>
+                
+                <div class="industry-intro">
+                    <h2>Specializujeme se na transakce v oblasti technologií</h2>
+                    <p>Poskytujeme komplexní poradenství při fúzích a akvizicích v rychle se rozvíjejícím světě digitálních technologií, kde inovace a růst definují budoucnost.</p>
+                </div>
+                
+                <div class="industry-details">
+                    <div class="industry-description">
+                        <h3>Svět nekonečných možností</h3>
+                        <p>Technologický sektor představuje nejdynamičtější oblast současné ekonomiky. Od startupů po globální tech giganty, digitální transformace mění způsob, jakým fungují všechna odvětví.</p>
+                        
+                        <p>V ADNP rozumíme komplexnosti tech ekosystému a pomáháme našim klientům navigovat ve světě umělé inteligence, cloudových řešení a digitálních platforem při vytváření synergií v každé transakci.</p>
                     </div>
-                </div>
-
-                <div class="content-section">
-                    <h2>Naše expertíza</h2>
-                    <div class="services-list">
-                        <div class="service-item-detailed">
-                            <h3>Oceňování technologických společností</h3>
-                            <p>Specializujeme se na komplexní hodnocení IT firem s důrazem na jejich technologický potenciál a tržní pozici.</p>
-                        </div>
-                        <div class="service-item-detailed">
-                            <h3>Due diligence technologických aktiv</h3>
-                            <p>Detailní analýza technologických portfolií, intelektuálního vlastnictví a vývojových kapacit.</p>
-                        </div>
-                        <div class="service-item-detailed">
-                            <h3>Strategické poradenství pro IT sektor</h3>
-                            <p>Pomáháme technologickým firmám identifikovat růstové příležitosti a optimalizovat jejich obchodní strategie.</p>
-                        </div>
+                    
+                    <div class="industry-services">
+                        <h3>Co zvládáme</h3>
+                        <ul class="services-checklist">
+                            <li><span class="checkmark">✓</span> Software společnosti</li>
+                            <li><span class="checkmark">✓</span> AI a machine learning</li>
+                            <li><span class="checkmark">✓</span> Cloudové služby</li>
+                            <li><span class="checkmark">✓</span> E-commerce platformy</li>
+                            <li><span class="checkmark">✓</span> Fintech řešení</li>
+                            <li><span class="checkmark">✓</span> Mobilní aplikace</li>
+                            <li><span class="checkmark">✓</span> Kybernetická bezpečnost</li>
+                            <li><span class="checkmark">✓</span> IoT technologie</li>
+                            <li><span class="checkmark">✓</span> Blockchain projekty</li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="content-section">
-                    <h2>Specifika IT sektoru</h2>
-                    <p>
-                        Technologický sektor se vyznačuje vysokou mírou inovace, rychlými změnami 
-                        a značnou volatilitou. Naše týmy rozumí specifickým výzvám tohoto odvětví 
-                        a dokážou poskytnout expertní poradenství při akvizicích a fúzích 
-                        technologických firem.
-                    </p>
                 </div>
             </div>
         </section>
@@ -143,7 +115,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>BIMINE a.s.</h3>
+                    <h3>ADNP a.s.</h3>
                     <p>Opletalova 39, 110 00 Praha 1</p>
                     <p>Email: <a href="mailto:info@bimine.cz">info@bimine.cz</a></p>
                 </div>
