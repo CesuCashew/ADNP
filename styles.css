@@ -282,14 +282,15 @@ input:checked + .slider:after {
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--background-primary);
-    backdrop-filter: blur(10px);
+    background: var(--glass-effect);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     min-width: 280px;
     box-shadow: var(--shadow-medium);
     border-radius: 2px;
     padding: 16px 0;
     z-index: 1001;
-    border: 2px solid var(--primary-gold);
+    border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .dropdown:hover .dropdown-content {
@@ -318,8 +319,8 @@ input:checked + .slider:after {
 }
 
 .dropdown-content a:hover {
-    background-color: var(--light-gold);
-    color: var(--text-dark);
+    background-color: rgba(212, 175, 55, 0.15);
+    color: var(--text-primary);
 }
 
 /* Main content */
