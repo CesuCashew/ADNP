@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekty - BIMINE a.s.</title>
+    <title>Projekty - ADNP a.s.</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="theme-switcher.js" defer></script>
 </head>
 <body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
     <header>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <a href="index.html"><h1>BIMINE</h1></a>
+                    <a href="index.html">
+                        <img src="adnp-removebg-preview.png" alt="ADNP logo">
+                    </a>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Naše služby</a>
+                        <a href="index.html#services" class="nav-link">Naše služby</a>
                         <div class="dropdown-content">
                             <a href="sluzby/fuze-a-akvizice.html">Fúze a akvizice</a>
                             <a href="sluzby/podnikove-poradenstvi.html">Podnikové poradenství a oceňování</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Odvětví</a>
+                        <a href="index.html#industries" class="nav-link">Odvětví</a>
                         <div class="dropdown-content">
                             <a href="odvetvi/nemovitosti.html">Nemovitosti</a>
                             <a href="odvetvi/digitalni-technologie.html">Digitální Technologie a IT</a>
@@ -53,111 +65,95 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Projekty</h1>
-                <p class="hero-description">
-                    Přehled našich úspěšně realizovaných projektů napříč různými odvětvími.
-                </p>
+        <!-- Hero Section s fotografií -->
+        <section class="industry-hero">
+            <div class="industry-hero-image">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Business Projects" class="hero-bg-image">
             </div>
         </section>
 
-        <section class="industry-content">
+        <!-- Content Section -->
+        <section class="industry-content-section">
             <div class="container">
-                <div class="content-section">
-                    <h2>Naše expertíza v číslech</h2>
-                    <p>
-                        Za několik let našeho působení jsme úspěšně dokončili desítky projektů 
-                        v oblasti fúzí a akvizic, podnikového poradenství a oceňování společností. 
-                        Naše portfolio zahrnuje transakce napříč všemi odvětvími české ekonomiky.
-                    </p>
+                <div class="industry-title">
+                    <h1>Projekty</h1>
                 </div>
+                
+                <div class="industry-intro">
+                    <h2>Úspěšné transakce napříč odvětvími</h2>
+                    <p>Za několik let našeho působení jsme úspěšně dokončili desítky projektů v oblasti fúzí a akvizic, podnikového poradenství a oceňování společností napříč všemi odvětvími české ekonomiky.</p>
+                </div>
+                
+                <div class="industry-details">
+                    <div class="industry-description">
+                        <h3>Naše expertíza v praxi</h3>
+                        <p>Každý projekt přináší jedinečné výzvy a příležitosti. Naší silou je schopnost rychle se orientovat v různých odvětvích a pochopit specifické potřeby každého klienta. Portfolio našich realizovaných projektů odráží šíři našich kompetencí a hloubku expertízy.</p>
+                        
+                        <p>V ADNP se zaměřujeme na "vytváření synergií v každé transakci". Každý úspěšně dokončený projekt je důkazem našeho závazku poskytovat klientům maximální hodnotu prostřednictvím strategické analýzy a precizního řízení procesů.</p>
 
-                <div class="content-section">
-                    <h2>Typy realizovaných projektů</h2>
-                    <div class="services-list">
-                        <div class="service-item-detailed">
-                            <h3>Akvizice v technologickém sektoru</h3>
-                            <p>Poradenství při akvizici IT společnosti specializující se na vývoj softwaru pro e-commerce platformy. Hodnota transakce přesáhla 50 mil. CZK.</p>
-                        </div>
-                        <div class="service-item-detailed">
-                            <h3>Prodej výrobní společnosti</h3>
-                            <p>Komplexní due diligence a poradenství při prodeji středně velkého výrobního podniku v automobilovém průmyslu zahraničnímu investorovi.</p>
-                        </div>
-                        <div class="service-item-detailed">
-                            <h3>Fúze v oblasti zdravotnictví</h3>
-                            <p>Strukturování a realizace fúze dvou poskytovatelů zdravotních služeb za účelem dosažení provozních synergií a rozšíření služeb.</p>
-                        </div>
-                        <div class="service-item-detailed">
-                            <h3>Oceňování nemovitostního portfolia</h3>
-                            <p>Expertní oceňování rozsáhlého portfolia komerčních nemovitostí pro účely refinancování a strategického plánování.</p>
-                        </div>
-                        <div class="service-item-detailed">
-                            <h3>Management buy-out v retailu</h3>
-                            <p>Poradenství managementu při odkupu obchodního řetězce od původních vlastníků, včetně strukturování financování.</p>
-                        </div>
-                        <div class="service-item-detailed">
-                            <h3>Restrukturalizace logistické společnosti</h3>
-                            <p>Komplexní restrukturalizace a optimalizace obchodních procesů vedoucí ke zlepšení profitability o 30%.</p>
+                        <div class="content-section">
+                            <h3>Testimonials klientů</h3>
+                            <blockquote>
+                                "ADNP prokázal výjimečnou expertízu při analýze našeho podniku a pomohl nám najít strategického partnera, který perfektně zapadl do našich dlouhodobých plánů."
+                            </blockquote>
+                            <p class="quote-author">- Klient z technologického sektoru</p>
+                            
+                            <blockquote style="margin-top: 1.5rem;">
+                                "Profesionalita, rychlost a preciznost. ADNP nám pomohl úspěšně dokončit komplexní transakci v rekordním čase."
+                            </blockquote>
+                            <p class="quote-author">- Klient z výrobního sektoru</p>
                         </div>
                     </div>
-                </div>
-
-                <div class="content-section">
-                    <h2>Odvětví našich projektů</h2>
-                    <div class="sectors-grid">
-                        <div class="sector-item">
-                            <h3>Technologie a IT</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Nemovitosti</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Výroba a průmysl</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Zdravotnictví</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Retail a služby</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Doprava a logistika</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Energetika</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Potravinářství</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <h2>Proč nás klienti doporučují</h2>
-                    <blockquote>
-                        "BIMINE prokázal výjimečnou expertízu při analýze našeho podniku a pomohl nám 
-                        najít strategického partnera, který perfektně zapadl do našich dlouhodobých plánů."
-                    </blockquote>
-                    <p class="quote-author">- Klient z technologického sektoru</p>
                     
-                    <blockquote>
-                        "Profesionalita, rychlost a preciznost. BIMINE nám pomohl úspěšně dokončit 
-                        komplexní transakci v rekordním čase."
-                    </blockquote>
-                    <p class="quote-author">- Klient z výrobního sektoru</p>
-                </div>
+                    <div class="industry-services">
+                        <h3>Typy realizovaných projektů</h3>
+                        <ul class="services-checklist">
+                            <li><span class="checkmark">✓</span> Akvizice v technologickém sektoru - IT společnosti, software pro e-commerce</li>
+                            <li><span class="checkmark">✓</span> Prodej výrobních společností - automobilový průmysl, zahraniční investoři</li>
+                            <li><span class="checkmark">✓</span> Fúze v oblasti zdravotnictví - poskytovatelé zdravotních služeb</li>
+                            <li><span class="checkmark">✓</span> Oceňování nemovitostního portfolia - komerční nemovitosti, refinancování</li>
+                            <li><span class="checkmark">✓</span> Management buy-out v retailu - obchodní řetězce, strukturování financování</li>
+                            <li><span class="checkmark">✓</span> Restrukturalizace logistických společností - optimalizace procesů</li>
+                            <li><span class="checkmark">✓</span> Due diligence pro investory - kompletní analýzy rizik a příležitostí</li>
+                            <li><span class="checkmark">✓</span> Strategické poradenství - dlouhodobé plánování a optimalizace</li>
+                        </ul>
 
-                <div class="content-section">
-                    <h2>Chcete konzultovat váš projekt?</h2>
-                    <p>
-                        Každý projekt je pro nás jedinečný. Rádi s vámi prodiskutujeme specifika 
-                        vašeho případu a navrhneme optimální řešení. Kontaktujte nás pro nezávaznou 
-                        konzultaci.
-                    </p>
-                    <div class="contact-info">
-                        <p>Email: <a href="mailto:info@bimine.cz">info@bimine.cz</a></p>
-                        <p>Adresa: Opletalova 39, 110 00 Praha 1</p>
+                        <div class="content-section" style="margin-top: 2rem;">
+                            <h3>Odvětví našich projektů</h3>
+                            <div class="sectors-grid">
+                                <div class="sector-item">
+                                    <h4>Technologie a IT</h4>
+                                </div>
+                                <div class="sector-item">
+                                    <h4>Nemovitosti</h4>
+                                </div>
+                                <div class="sector-item">
+                                    <h4>Výroba a průmysl</h4>
+                                </div>
+                                <div class="sector-item">
+                                    <h4>Zdravotnictví</h4>
+                                </div>
+                                <div class="sector-item">
+                                    <h4>Retail a služby</h4>
+                                </div>
+                                <div class="sector-item">
+                                    <h4>Doprava a logistika</h4>
+                                </div>
+                                <div class="sector-item">
+                                    <h4>Energetika</h4>
+                                </div>
+                                <div class="sector-item">
+                                    <h4>Potravinářství</h4>
+                                </div>
+                            </div>
+
+                            <div class="contact-info" style="margin-top: 2rem;">
+                                <h4>Chcete konzultovat váš projekt?</h4>
+                                <p>Každý projekt je pro nás jedinečný. Rádi s vámi prodiskutujeme specifika vašeho případu a navrhneme optimální řešení.</p>
+                                <p>Email: <a href="mailto:info@adnp.cz">info@adnp.cz</a></p>
+                                <p>Adresa: Opletalova 39, 110 00 Praha 1</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,9 +164,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>BIMINE a.s.</h3>
+                    <h3>ADNP a.s.</h3>
                     <p>Opletalova 39, 110 00 Praha 1</p>
-                    <p>Email: <a href="mailto:info@bimine.cz">info@bimine.cz</a></p>
+                    <p>Email: <a href="mailto:info@adnp.cz">info@adnp.cz</a></p>
                 </div>
                 <div class="footer-section">
                     <a href="zasady-zpracovani.html">Zásady zpracování a ochrany osobních údajů</a>

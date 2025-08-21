@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:www.bimine.cz)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(find:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []

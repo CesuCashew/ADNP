@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fúze a akvizice - BIMINE a.s.</title>
+    <title>Fúze a akvizice - ADNP a.s.</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="../theme-switcher.js" defer></script>
 </head>
 <body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
     <header>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <a href="../index.html"><h1>BIMINE</h1></a>
+                    <a href="../index.html">
+                        <img src="../adnp-removebg-preview.png" alt="ADNP logo">
+                    </a>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Naše služby</a>
+                        <a href="../index.html#services" class="nav-link">Naše služby</a>
                         <div class="dropdown-content">
                             <a href="fuze-a-akvizice.html">Fúze a akvizice</a>
                             <a href="podnikove-poradenstvi.html">Podnikové poradenství a oceňování</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Odvětví</a>
+                        <a href="../index.html#industries" class="nav-link">Odvětví</a>
                         <div class="dropdown-content">
                             <a href="../odvetvi/nemovitosti.html">Nemovitosti</a>
                             <a href="../odvetvi/digitalni-technologie.html">Digitální Technologie a IT</a>
@@ -53,84 +65,159 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Fúze a akvizice</h1>
-                <p class="hero-description">
-                    Komplexní poradenství při fúzích a akvizicích s důrazem na maximalizaci 
-                    hodnoty pro všechny zúčastněné strany.
-                </p>
+        <!-- Hero Section s fotografií -->
+        <section class="service-hero">
+            <div class="service-hero-background">
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="M&A Meeting" class="service-hero-image">
+                <div class="service-hero-overlay"></div>
+            </div>
+            <div class="service-hero-content">
+                <div class="container">
+                    <h1 class="service-hero-title">Fúze a akvizice</h1>
+                    <p class="service-hero-subtitle">Vytváříme synergie v každé transakci s precizností a strategickou vizí</p>
+                </div>
             </div>
         </section>
 
-        <section class="industry-content">
+        <!-- Main Content Section -->
+        <section class="service-content-section">
             <div class="container">
-                <div class="content-section">
-                    <h2>Naše přístup k M&A</h2>
-                    <p>
-                        V BIMINE chápeme, že každá fúze nebo akvizice představuje jedinečnou příležitost 
-                        k vytvoření hodnoty. Naším cílem je zajistit, aby celý proces probíhal hladce 
-                        a efektivně, s maximálním důrazem na dosažení optimálních výsledků pro naše klienty.
-                    </p>
+                <!-- Intro -->
+                <div class="service-intro">
+                    <h2>Naše filosofie M&A</h2>
+                    <p>V ADNP chápeme, že každá fúze nebo akvizice představuje jedinečnou příležitost k vytvoření hodnoty. Náš přístup je založen na hlubokém porozumění obchodním cílům klientů a systematickém řízení celého procesu transakce.</p>
                 </div>
-
-                <div class="content-section">
-                    <h2>Služby, které poskytujeme</h2>
-                    <div class="services-list">
-                        <div class="service-item-detailed">
-                            <h3>Strategické poradenství</h3>
-                            <p>Pomáháme identifikovat a vyhodnotit příležitosti k fúzím a akvizicím, včetně analýzy tržních podmínek a konkurenčního prostředí.</p>
+                
+                <!-- Services Grid -->
+                <div class="service-expertise">
+                    <h2>Naše expertíza</h2>
+                    <div class="expertise-grid">
+                        <div class="expertise-card">
+                            <div class="expertise-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2z"/>
+                                    <path d="M19 11h-4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2z"/>
+                                    <path d="M12 6V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2z"/>
+                                </svg>
+                            </div>
+                            <h3>Strategické plánování</h3>
+                            <p>Identifikace a vyhodnocení M&A příležitostí s důrazem na dlouhodobé strategické cíle</p>
+                            <ul class="expertise-checklist">
+                                <li><span class="checkmark">✓</span> Analýza trhu a konkurence</li>
+                                <li><span class="checkmark">✓</span> Screening cílových společností</li>
+                                <li><span class="checkmark">✓</span> Vyhodnocení synergií</li>
+                            </ul>
                         </div>
-                        <div class="service-item-detailed">
-                            <h3>Due diligence</h3>
-                            <p>Komplexní prověření cílové společnosti zahrnující finanční, právní, technickou a obchodní analýzu.</p>
+                        
+                        <div class="expertise-card">
+                            <div class="expertise-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                    <polyline points="10,9 9,9 8,9"/>
+                                </svg>
+                            </div>
+                            <h3>Due Diligence</h3>
+                            <p>Komplexní prověření všech aspektů cílové společnosti s důrazem na identifikaci rizik</p>
+                            <ul class="expertise-checklist">
+                                <li><span class="checkmark">✓</span> Finanční due diligence</li>
+                                <li><span class="checkmark">✓</span> Právní a regulatorní audit</li>
+                                <li><span class="checkmark">✓</span> Technická a IT analýza</li>
+                            </ul>
                         </div>
-                        <div class="service-item-detailed">
-                            <h3>Oceňování společností</h3>
-                            <p>Expertní posouzení hodnoty společností pomocí různých oceňovacích metod a přístupů.</p>
+                        
+                        <div class="expertise-card">
+                            <div class="expertise-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="1" x2="12" y2="23"/>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                </svg>
+                            </div>
+                            <h3>Oceňování & Strukturování</h3>
+                            <p>Precizní oceňování s využitím moderních metod a optimalizace struktury transakce</p>
+                            <ul class="expertise-checklist">
+                                <li><span class="checkmark">✓</span> DCF a multiplikátorové modely</li>
+                                <li><span class="checkmark">✓</span> Daňově optimalizované struktury</li>
+                                <li><span class="checkmark">✓</span> Podmínky platby a garance</li>
+                            </ul>
                         </div>
-                        <div class="service-item-detailed">
-                            <h3>Vyjednávání a strukturování transakcí</h3>
-                            <p>Asistence při vyjednávání podmínek transakce a navrhování optimální struktury obchodu.</p>
-                        </div>
-                        <div class="service-item-detailed">
+                        
+                        <div class="expertise-card">
+                            <div class="expertise-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
                             <h3>Post-merger integrace</h3>
-                            <p>Podporujeme klienty při integraci společností po dokončení transakce pro dosažení plánovaných synergií.</p>
+                            <p>Systematická integrace společností pro dosažení plánovaných synergií a ROI</p>
+                            <ul class="expertise-checklist">
+                                <li><span class="checkmark">✓</span> Integrační plánování</li>
+                                <li><span class="checkmark">✓</span> Change management</li>
+                                <li><span class="checkmark">✓</span> Tracking synergií</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="content-section">
-                    <h2>Typy transakcí</h2>
-                    <div class="sectors-grid">
-                        <div class="sector-item">
-                            <h3>Akvizice</h3>
+                <!-- Transaction Types -->
+                <div class="transaction-types">
+                    <h2>Typy transakcí, které řídíme</h2>
+                    <div class="transaction-grid">
+                        <div class="transaction-item">
+                            <div class="transaction-number">01</div>
+                            <h3>Strategické akvizice</h3>
+                            <p>Nákup společností pro rozšíření tržního podílu nebo portfolia</p>
                         </div>
-                        <div class="sector-item">
-                            <h3>Fúze</h3>
-                        </div>
-                        <div class="sector-item">
-                            <h3>Prodej společností</h3>
-                        </div>
-                        <div class="sector-item">
+                        <div class="transaction-item">
+                            <div class="transaction-number">02</div>
                             <h3>Management buy-outs</h3>
+                            <p>Transakce vedené managementem pro převzetí kontroly</p>
                         </div>
-                        <div class="sector-item">
-                            <h3>Strategická partnerství</h3>
+                        <div class="transaction-item">
+                            <div class="transaction-number">03</div>
+                            <h3>Fúze equals</h3>
+                            <p>Spojení rovnocenných partnerů pro dosažení synergií</p>
                         </div>
-                        <div class="sector-item">
+                        <div class="transaction-item">
+                            <div class="transaction-number">04</div>
+                            <h3>Cross-border transakce</h3>
+                            <p>Mezinárodní M&A s komplexními regulatorními požadavky</p>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-number">05</div>
                             <h3>Joint ventures</h3>
+                            <p>Strategická partnerství a společné podnikání</p>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-number">06</div>
+                            <h3>Exit strategie</h3>
+                            <p>Prodej společností nebo podílů s maximalizací hodnoty</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="content-section">
-                    <h2>Proč zvolit BIMINE</h2>
-                    <p>
-                        Náš tým kombinuje hluboké znalosti různých odvětví s praktickými zkušenostmi 
-                        z realizace komplexních transakcí. Aktivně hledáme řešení ve složitých situacích 
-                        a vytváříme synergie, které přinášejí našim klientům konkurenční výhodu.
-                    </p>
+                <!-- Statistics -->
+                <div class="service-stats">
+                    <div class="stats-container">
+                        <div class="stat-item-large">
+                            <div class="stat-number-large">5</div>
+                            <div class="stat-unit">mld CZK</div>
+                            <div class="stat-label">Celková hodnota řízených transakcí</div>
+                        </div>
+                        <div class="stat-item-large">
+                            <div class="stat-number-large">100+</div>
+                            <div class="stat-label">Úspěšně dokončených M&A projektů</div>
+                        </div>
+                        <div class="stat-item-large">
+                            <div class="stat-number-large">15+</div>
+                            <div class="stat-label">Odvětví s prokázanou expertízou</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -140,9 +227,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>BIMINE a.s.</h3>
+                    <h3>ADNP a.s.</h3>
                     <p>Opletalova 39, 110 00 Praha 1</p>
-                    <p>Email: <a href="mailto:info@bimine.cz">info@bimine.cz</a></p>
+                    <p>Email: <a href="mailto:info@adnp.cz">info@adnp.cz</a></p>
                 </div>
                 <div class="footer-section">
                     <a href="../zasady-zpracovani.html">Zásady zpracování a ochrany osobních údajů</a>

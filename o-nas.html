@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O nás - BIMINE a.s.</title>
+    <title>O nás - ADNP a.s.</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="theme-switcher.js" defer></script>
 </head>
 <body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
     <header>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <a href="index.html"><h1>BIMINE</h1></a>
+                    <a href="index.html">
+                        <img src="adnp-removebg-preview.png" alt="ADNP logo">
+                    </a>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Naše služby</a>
+                        <a href="index.html#services" class="nav-link">Naše služby</a>
                         <div class="dropdown-content">
                             <a href="sluzby/fuze-a-akvizice.html">Fúze a akvizice</a>
                             <a href="sluzby/podnikove-poradenstvi.html">Podnikové poradenství a oceňování</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Odvětví</a>
+                        <a href="index.html#industries" class="nav-link">Odvětví</a>
                         <div class="dropdown-content">
                             <a href="odvetvi/nemovitosti.html">Nemovitosti</a>
                             <a href="odvetvi/digitalni-technologie.html">Digitální Technologie a IT</a>
@@ -53,108 +65,78 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">O nás</h1>
-                <p class="hero-description">
-                    Jsme tým profesionálů specializujících se na fúze a akvizice. 
-                    Aktivně hledáme řešení ve složitých situacích.
-                </p>
+        <!-- Hero Section s fotografií -->
+        <section class="industry-hero">
+            <div class="industry-hero-image">
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Professional Team" class="hero-bg-image">
             </div>
         </section>
 
-        <section class="industry-content">
+        <!-- Content Section -->
+        <section class="industry-content-section">
             <div class="container">
-                <div class="content-section">
-                    <h2>Kdo jsme</h2>
-                    <p>
-                        BIMINE a.s. je česká poradenská společnost specializující se na fúze a akvizice 
-                        a podnikové poradenství. Nabízíme precizní a nezávislé poradenství pro středně 
-                        velké podniky napříč různými odvětvími ekonomiky.
-                    </p>
-                    <p>
-                        Každý podnik má svůj unikátní příběh a vizi, a my pomáháme našim klientům 
-                        při klíčových rozhodnutích během procesu prodeje a nákupu firem. 
-                        Naše expertíza je založena na číslech, hloubce porozumění a následném 
-                        optimálním řešení.
-                    </p>
+                <div class="industry-title">
+                    <h1>O nás</h1>
                 </div>
+                
+                <div class="industry-intro">
+                    <h2>Tým profesionálů s jasnou vizí</h2>
+                    <p>ADNP a.s. je česká poradenská společnost specializující se na fúze a akvizice. Nabízíme precizní a nezávislé poradenství pro středně velké podniky napříč různými odvětvími ekonomiky.</p>
+                </div>
+                
+                <div class="industry-details">
+                    <div class="industry-description">
+                        <h3>Naše expertíza</h3>
+                        <p>Každý podnik má svůj unikátní příběh a vizi, a my pomáháme našim klientům při klíčových rozhodnutích během procesu prodeje a nákupu firem. Naše expertíza je založena na číslech, hloubce porozumění a následném optimálním řešení.</p>
+                        
+                        <p>V ADNP se zaměřujeme na "vytváření synergií v každé transakci". Naším cílem je transformovat obchodní příležitosti a otevírat nové cesty k růstu prostřednictvím strategické analýzy a hlubokého porozumění trhu.</p>
 
-                <div class="content-section">
-                    <h2>Náš tým</h2>
-                    <p>
-                        Náš tým tvoří více než 30 profesionálů z různých oblastí:
-                    </p>
-                    <div class="services-list">
-                        <div class="service-item-detailed">
-                            <h3>Právníci</h3>
-                            <p>Specialisté na korporátní právo, M&A transakce a právní due diligence.</p>
-                        </div>
-                        <div class="service-item-detailed">
-                            <h3>Účetní</h3>
-                            <p>Experti na finanční analýzy, oceňování a finanční due diligence.</p>
-                        </div>
-                        <div class="service-item-detailed">
-                            <h3>Transakční specialisté</h3>
-                            <p>Odborníci na řízení a koordinaci složitých M&A procesů.</p>
-                        </div>
-                        <div class="service-item-detailed">
-                            <h3>Daňoví poradci</h3>
-                            <p>Specialisté na daňové aspekty transakcí a optimalizaci daňové struktury.</p>
+                        <div class="content-section">
+                            <h3>Naše hodnoty a přístup</h3>
+                            <div class="values-grid">
+                                <div class="value-item">
+                                    <h4>Optimismus a přátelství</h4>
+                                    <p>Věříme v pozitivní přístup a budování dlouhodobých vztahů s našimi klienty.</p>
+                                </div>
+                                <div class="value-item">
+                                    <h4>Spolupráce a angažovanost</h4>
+                                    <p>Pracujeme jako jeden tým s našimi klienty pro dosažení společných cílů.</p>
+                                </div>
+                                <div class="value-item">
+                                    <h4>Jasná strategie a realizace</h4>
+                                    <p>Zaměřujeme se na praktická řešení a jejich úspěšnou implementaci.</p>
+                                </div>
+                                <div class="value-item">
+                                    <h4>Etika a profesionalita</h4>
+                                    <p>Dodržujeme nejvyšší etické standardy a profesionální postupy.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    
+                    <div class="industry-services">
+                        <h3>Náš tým</h3>
+                        <p>Více než 30 profesionálů z různých oblastí:</p>
+                        <ul class="services-checklist">
+                            <li><span class="checkmark">✓</span> Právníci - specialisté na korporátní právo a M&A transakce</li>
+                            <li><span class="checkmark">✓</span> Účetní - experti na finanční analýzy a oceňování</li>
+                            <li><span class="checkmark">✓</span> Transakční specialisté - odborníci na řízení složitých procesů</li>
+                            <li><span class="checkmark">✓</span> Daňoví poradci - specialisté na optimalizaci struktur</li>
+                            <li><span class="checkmark">✓</span> Strategičtí poradci - experti na obchodní plánování</li>
+                            <li><span class="checkmark">✓</span> Due diligence specialisté - analytici rizik a příležitostí</li>
+                            <li><span class="checkmark">✓</span> Sektoroví specialisté - znalci specifických odvětví</li>
+                        </ul>
 
-                <div class="content-section">
-                    <h2>Naše hodnoty</h2>
-                    <div class="values-grid">
-                        <div class="value-item">
-                            <h3>Optimismus a přátelství</h3>
-                            <p>Věříme v pozitivní přístup a budování dlouhodobých vztahů s našimi klienty.</p>
+                        <div class="content-section" style="margin-top: 2rem;">
+                            <h3>Kontaktní údaje</h3>
+                            <div class="contact-info">
+                                <p><strong>ADNP a.s.</strong></p>
+                                <p>Opletalova 39</p>
+                                <p>110 00 Praha 1</p>
+                                <p>Česká republika</p>
+                                <p>Email: <a href="mailto:info@adnp.cz">info@adnp.cz</a></p>
+                            </div>
                         </div>
-                        <div class="value-item">
-                            <h3>Spolupráce a angažovanost</h3>
-                            <p>Pracujeme jako jeden tým s našimi klienty pro dosažení společných cílů.</p>
-                        </div>
-                        <div class="value-item">
-                            <h3>Jasná strategie a realizace</h3>
-                            <p>Zaměřujeme se na praktická řešení a jejich úspěšnou implementaci.</p>
-                        </div>
-                        <div class="value-item">
-                            <h3>Expertní tým a inovace</h3>
-                            <p>Kombinujeme odborné znalosti s inovativními přístupy k řešení problémů.</p>
-                        </div>
-                        <div class="value-item">
-                            <h3>Etika a profesionalita</h3>
-                            <p>Dodržujeme nejvyšší etické standardy a profesionální postupy.</p>
-                        </div>
-                        <div class="value-item">
-                            <h3>Výsledky</h3>
-                            <p>Zaměřujeme se na dosažení měřitelných a udržitelných výsledků pro naše klienty.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <h2>Naše mise</h2>https://unsplash.com/s/photos/Profesional
-                    <blockquote>
-                        "Vytváříme synergie v každé transakci"
-                    </blockquote>
-                    <p>
-                        Naší misí je pomáhat našim klientům dosahovat jejich obchodních cílů 
-                        prostřednictvím strategického poradenství a expertní podpory při 
-                        nejdůležitějších rozhodnutích v životě jejich podniků.
-                    </p>
-                </div>
-
-                <div class="content-section">
-                    <h2>Kontaktní údaje</h2>
-                    <div class="contact-info">
-                        <p><strong>BIMINE a.s.</strong></p>
-                        <p>Opletalova 39</p>
-                        <p>110 00 Praha 1</p>
-                        <p>Česká republika</p>
-                        <p>Email: <a href="mailto:info@bimine.cz">info@bimine.cz</a></p>
                     </div>
                 </div>
             </div>
@@ -165,9 +147,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>BIMINE a.s.</h3>
+                    <h3>ADNP a.s.</h3>
                     <p>Opletalova 39, 110 00 Praha 1</p>
-                    <p>Email: <a href="mailto:info@bimine.cz">info@bimine.cz</a></p>
+                    <p>Email: <a href="mailto:info@adnp.cz">info@adnp.cz</a></p>
                 </div>
                 <div class="footer-section">
                     <a href="zasady-zpracovani.html">Zásady zpracování a ochrany osobních údajů</a>
