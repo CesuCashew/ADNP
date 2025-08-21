@@ -844,7 +844,7 @@ section {
 
 .industry-image {
     position: relative;
-    height: 240px;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -932,7 +932,7 @@ section {
     pointer-events: none;
     opacity: 1;
     transition: all 0.3s ease;
-    max-height: 220px;
+    max-height: none;
     overflow: visible;
 }
 
