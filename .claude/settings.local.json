@@ -4,7 +4,18 @@
       "WebFetch(domain:www.bimine.cz)",
       "Bash(curl:*)",
       "Bash(find:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(for file in *.html)",
+      "Bash(do)",
+      "Bash(if [ \"$file\" != \"nemovitosti.html\" ])",
+      "Bash(then)",
+      "Bash(sed:*)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(for:*)",
+      "Bash(if ! grep -q \"hamburger-menu\" \"$file\")",
+      "Bash(if ! grep -q \"mobile-nav.js\" \"$file\")",
+      "Bash(if ! grep -q \"i18n.js\" \"$file\")"
     ],
     "deny": [],
     "ask": []

@@ -9,14 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="theme-switcher.js" defer></script>
+    <script src="mobile-nav.js" defer></script>
+    <script src="chatbot.js" defer></script>
+    <script src="i18n.js" defer></script>
 </head>
 <body>
-    <div class="theme-switch-wrapper">
-        <label class="theme-switch">
-            <input type="checkbox">
-            <span class="slider"></span>
-        </label>
-    </div>
     <header>
         <nav class="navbar">
             <div class="nav-container">
@@ -25,16 +22,22 @@
                         <img src="adnp-removebg-preview.png" alt="ADNP logo">
                     </a>
                 </div>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul class="nav-menu">
                     <li class="nav-item dropdown">
-                        <a href="#services" class="nav-link">Naše služby</a>
+                        <a href="#services" class="nav-link" data-i18n="nav.services">Naše služby</a>
                         <div class="dropdown-content">
-                            <a href="sluzby/fuze-a-akvizice.html">Fúze a akvizice</a>
-                            <a href="sluzby/podnikove-poradenstvi.html">Podnikové poradenství a oceňování</a>
+                            <a href="sluzby/fuze-a-akvizice.html" data-i18n="nav.ma">Fúze a akvizice</a>
+                            <a href="sluzby/podnikove-poradenstvi.html" data-i18n="nav.consulting">Podnikové poradenství a oceňování</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#industries" class="nav-link">Odvětví</a>
+                        <a href="#industries" class="nav-link" data-i18n="nav.industries">Odvětví</a>
                         <div class="dropdown-content">
                             <a href="odvetvi/nemovitosti.html">Nemovitosti</a>
                             <a href="odvetvi/digitalni-technologie.html">Digitální Technologie a IT</a>
@@ -54,12 +57,21 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="projekty.html" class="nav-link">Projekty</a>
+                        <a href="projekty.html" class="nav-link" data-i18n="nav.projects">Projekty</a>
                     </li>
                     <li class="nav-item">
-                        <a href="o-nas.html" class="nav-link">O nás</a>
+                        <a href="o-nas.html" class="nav-link" data-i18n="nav.about">O nás</a>
                     </li>
                 </ul>
+                <div class="nav-right">
+                    <!-- Language selector will be added by JavaScript -->
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -464,5 +476,29 @@
             observer.observe(statsSection);
         }
     </script>
+    
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbot-widget">
+        <div class="chatbot-toggle" id="chatbot-toggle">
+            <span class="chatbot-icon">💬</span>
+        </div>
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <h3>Máte dotazy?</h3>
+                <button class="chatbot-close" id="chatbot-close">×</button>
+            </div>
+            <div class="chatbot-body">
+                <div class="chatbot-messages" id="chatbot-messages">
+                    <div class="message bot-message">
+                        <p>Dobrý den! Jak vám mohu pomoci? Zajímáte se o naše služby v oblasti M&A?</p>
+                    </div>
+                </div>
+                <div class="chatbot-input-area">
+                    <input type="text" id="chatbot-input" placeholder="Napište vaši zprávu..." />
+                    <button id="chatbot-send">Poslat</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
