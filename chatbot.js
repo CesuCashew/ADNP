@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const chatbotInput = document.getElementById('chatbot-input');
     const chatbotSend = document.getElementById('chatbot-send');
     const chatbotMessages = document.getElementById('chatbot-messages');
+    
 
     // Predefined responses
     const responses = {
@@ -43,9 +44,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (!chatbotToggle || !chatbotWindow) return;
 
+    // Add shake animation after page load
+    setTimeout(() => {
+        chatbotToggle.classList.add('shake');
+        setTimeout(() => {
+            chatbotToggle.classList.remove('shake');
+        }, 2400); // 3 iterations × 0.8s = 2.4s
+    }, 3000); // Start after 3 seconds
+
     // Toggle chatbot window
     chatbotToggle.addEventListener('click', function() {
         chatbotWindow.classList.toggle('active');
+        // Remove shake class if still active
+        chatbotToggle.classList.remove('shake');
     });
 
     // Close chatbot window
