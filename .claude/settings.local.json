@@ -15,7 +15,8 @@
       "Bash(for:*)",
       "Bash(if ! grep -q \"hamburger-menu\" \"$file\")",
       "Bash(if ! grep -q \"mobile-nav.js\" \"$file\")",
-      "Bash(if ! grep -q \"i18n.js\" \"$file\")"
+      "Bash(if ! grep -q \"i18n.js\" \"$file\")",
+      "Bash(python3:*)"
     ],
     "deny": [],
     "ask": []
