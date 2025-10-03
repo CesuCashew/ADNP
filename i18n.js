@@ -864,10 +864,10 @@ const i18n = {
     // Create language selector
     createLanguageSelector() {
         const languages = [
-            { code: 'cs', name: 'Čeština', flag: '🇨🇿' },
-            { code: 'en', name: 'English', flag: '🇬🇧' },
-            { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-            { code: 'uk', name: 'Українська', flag: '🇺🇦' }
+            { code: 'cs', name: 'Čeština', flag: 'CZ' },
+            { code: 'en', name: 'English', flag: 'GB' },
+            { code: 'de', name: 'Deutsch', flag: 'DE' },
+            { code: 'uk', name: 'Українська', flag: 'UA' }
         ];
         
         const selector = document.createElement('div');

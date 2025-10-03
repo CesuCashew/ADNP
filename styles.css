@@ -230,7 +230,7 @@ input:checked + .slider:after {
     padding: 0 24px;
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 140px;
     gap: 24px;
 }
 
@@ -1911,7 +1911,13 @@ body:has(.industry-hero) main {
 }
 
 .current-language {
-    font-size: 16px;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    line-height: 1;
+    color: var(--primary-gold);
+    min-width: 24px;
+    text-align: center;
 }
 
 .dropdown-arrow {
@@ -1957,7 +1963,13 @@ body:has(.industry-hero) main {
 }
 
 .language-option .flag {
-    font-size: 14px;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    line-height: 1;
+    color: var(--primary-gold);
+    min-width: 24px;
+    text-align: center;
 }
 
 .language-option .name {
@@ -2167,13 +2179,13 @@ body:has(.industry-hero) main {
         position: relative;
         flex-wrap: nowrap;
     }
-    
+
     .hamburger-menu {
         display: flex;
         order: 1;
         z-index: 1002;
     }
-    
+
     .nav-menu {
         flex-direction: column;
         position: absolute;
@@ -2190,12 +2202,12 @@ body:has(.industry-hero) main {
         max-height: calc(100vh - 70px);
         overflow-y: auto;
     }
-    
+
     .nav-menu.active {
         display: flex;
         animation: slideDown 0.3s ease-out;
     }
-    
+
     .nav-right {
         gap: 8px;
         order: 2;
@@ -2205,8 +2217,9 @@ body:has(.industry-hero) main {
     }
     
     .language-toggle {
-        padding: 6px 8px;
-        font-size: 14px;
+        padding: 4px 6px;
+        font-size: 12px;
+        min-width: 32px;
     }
     
     .language-dropdown {
@@ -2222,19 +2235,19 @@ body:has(.industry-hero) main {
     }
     
     .theme-switch {
-        width: 52px;
-        height: 28px;
+        width: 44px;
+        height: 24px;
     }
     
     .slider:before {
-        height: 22px;
-        width: 22px;
+        height: 18px;
+        width: 18px;
         left: 3px;
         top: 3px;
     }
     
     input:checked + .slider:before {
-        transform: translateX(24px);
+        transform: translateX(20px);
     }
     
     .slider:after {
@@ -2475,6 +2488,32 @@ body:has(.industry-hero) main {
     display: flex;
     align-items: center;
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .service-hero {
+        overflow: visible;
+        margin-top: 70px;
+        height: 50vh;
+    }
+
+    /* Ensure navbar is above service-hero on mobile */
+    .navbar {
+        z-index: 10000 !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+    }
+
+    .nav-right {
+        z-index: 10001 !important;
+        position: relative !important;
+    }
+
+    .nav-container {
+        z-index: 10002 !important;
+    }
 }
 
 .service-hero-background {
