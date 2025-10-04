@@ -11,7 +11,7 @@
     <script src="../theme-switcher.js" defer></script>
     <script src="../mobile-nav.js" defer></script>
     <script src="../chatbot.js" defer></script>
-    <script src="../i18n.js" defer></script>
+    <script src="../i18n.js?v=1.1" defer></script>
 </head>
 <body>
     <header>
@@ -146,5 +146,29 @@
             </div>
         </div>
     </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbot-widget">
+        <div class="chatbot-toggle" id="chatbot-toggle">
+            <span class="chatbot-icon">💬</span>
+        </div>
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <h3 data-i18n="chatbot.title">Máte dotazy?</h3>
+                <button class="chatbot-close" id="chatbot-close">×</button>
+            </div>
+            <div class="chatbot-body">
+                <div class="chatbot-messages" id="chatbot-messages">
+                    <div class="message bot-message">
+                        <p data-i18n="chatbot.greeting">Dobrý den! Jak vám mohu pomoci? Zajímáte se o naše služby v oblasti M&A?</p>
+                    </div>
+                </div>
+                <div class="chatbot-input-area">
+                    <input type="text" id="chatbot-input" placeholder="Napište vaši zprávu..." data-i18n="chatbot.placeholder" />
+                    <button id="chatbot-send" data-i18n="chatbot.send">Poslat</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

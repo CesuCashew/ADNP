@@ -11,7 +11,7 @@
     <script src="theme-switcher.js" defer></script>
     <script src="mobile-nav.js" defer></script>
     <script src="chatbot.js" defer></script>
-    <script src="i18n.js" defer></script>
+    <script src="i18n.js?v=1.1" defer></script>
 </head>
 <body>
     <header>
@@ -39,21 +39,21 @@
                     <li class="nav-item dropdown">
                         <a href="#industries" class="nav-link" data-i18n="nav.industries">Odvětví</a>
                         <div class="dropdown-content">
-                            <a href="odvetvi/nemovitosti.html">Nemovitosti</a>
-                            <a href="odvetvi/digitalni-technologie.html">Digitální Technologie a IT</a>
-                            <a href="odvetvi/obchod-retail.html">Obchod a retail</a>
-                            <a href="odvetvi/doprava-logistika.html">Doprava a logistika</a>
-                            <a href="odvetvi/zdravotnictvi.html">Zdravotnictví</a>
-                            <a href="odvetvi/gastro-potravinari.html">Gastro, potravinářství a nápoje</a>
-                            <a href="odvetvi/kryptomeny.html">Kryptoměny</a>
-                            <a href="odvetvi/financni-sluzby.html">Finanční služby</a>
-                            <a href="odvetvi/stavebnictvi.html">Stavebnictví a development</a>
-                            <a href="odvetvi/automobilovy-prumysl.html">Automobilový průmysl</a>
-                            <a href="odvetvi/materialy-tezba.html">Materiály a těžební průmysl</a>
-                            <a href="odvetvi/podnikove-sluzby.html">Podnikové služby</a>
-                            <a href="odvetvi/prumysl.html">Průmysl</a>
-                            <a href="odvetvi/energetika.html">Energetika a PHM</a>
-                            <a href="odvetvi/infrastruktura.html">Infrastruktura</a>
+                            <a href="odvetvi/nemovitosti.html" data-i18n="nav.real_estate">Nemovitosti</a>
+                            <a href="odvetvi/digitalni-technologie.html" data-i18n="nav.it_full">Digitální Technologie a IT</a>
+                            <a href="odvetvi/obchod-retail.html" data-i18n="nav.retail_full">Obchod a retail</a>
+                            <a href="odvetvi/doprava-logistika.html" data-i18n="nav.logistics_full">Doprava a logistika</a>
+                            <a href="odvetvi/zdravotnictvi.html" data-i18n="nav.healthcare">Zdravotnictví</a>
+                            <a href="odvetvi/gastro-potravinari.html" data-i18n="nav.gastro_full">Gastro, potravinářství a nápoje</a>
+                            <a href="odvetvi/kryptomeny.html" data-i18n="nav.crypto">Kryptoměny</a>
+                            <a href="odvetvi/financni-sluzby.html" data-i18n="nav.finance_full">Finanční služby</a>
+                            <a href="odvetvi/stavebnictvi.html" data-i18n="nav.construction_full">Stavebnictví a development</a>
+                            <a href="odvetvi/automobilovy-prumysl.html" data-i18n="nav.automotive_full">Automobilový průmysl</a>
+                            <a href="odvetvi/materialy-tezba.html" data-i18n="nav.materials_full">Materiály a těžební průmysl</a>
+                            <a href="odvetvi/podnikove-sluzby.html" data-i18n="nav.b2b_full">Podnikové služby</a>
+                            <a href="odvetvi/prumysl.html" data-i18n="nav.manufacturing_full">Průmysl</a>
+                            <a href="odvetvi/energetika.html" data-i18n="nav.energy_full">Energetika a PHM</a>
+                            <a href="odvetvi/infrastruktura.html" data-i18n="nav.infrastructure_full">Infrastruktura</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -476,7 +476,7 @@
             observer.observe(statsSection);
         }
     </script>
-    
+
     <!-- Chatbot Widget -->
     <div class="chatbot-widget" id="chatbot-widget">
         <div class="chatbot-toggle" id="chatbot-toggle">
@@ -484,18 +484,18 @@
         </div>
         <div class="chatbot-window" id="chatbot-window">
             <div class="chatbot-header">
-                <h3>Máte dotazy?</h3>
+                <h3 data-i18n="chatbot.title">Máte dotazy?</h3>
                 <button class="chatbot-close" id="chatbot-close">×</button>
             </div>
             <div class="chatbot-body">
                 <div class="chatbot-messages" id="chatbot-messages">
                     <div class="message bot-message">
-                        <p>Dobrý den! Jak vám mohu pomoci? Zajímáte se o naše služby v oblasti M&A?</p>
+                        <p data-i18n="chatbot.greeting">Dobrý den! Jak vám mohu pomoci? Zajímáte se o naše služby v oblasti M&A?</p>
                     </div>
                 </div>
                 <div class="chatbot-input-area">
-                    <input type="text" id="chatbot-input" placeholder="Napište vaši zprávu..." />
-                    <button id="chatbot-send">Poslat</button>
+                    <input type="text" id="chatbot-input" placeholder="Napište vaši zprávu..." data-i18n="chatbot.placeholder" />
+                    <button id="chatbot-send" data-i18n="chatbot.send">Poslat</button>
                 </div>
             </div>
         </div>

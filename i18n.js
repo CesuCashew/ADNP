@@ -1,7 +1,7 @@
-// Internationalization System
+// Internationalization System v1.1
 const i18n = {
     currentLanguage: 'cs',
-    
+
     // Translation strings
     translations: {
         cs: {
@@ -24,11 +24,11 @@ const i18n = {
             'nav.finance_full': 'Finanční služby',
             'nav.construction_full': 'Stavebnictví a development',
             'nav.automotive_full': 'Automobilový průmysl',
-            'nav.materials_full': 'Materiály a těžba',
-            'nav.infrastructure_full': 'Infrastruktura a doprava',
+            'nav.materials_full': 'Materiály a těžební průmysl',
+            'nav.infrastructure_full': 'Infrastruktura',
             'nav.b2b_full': 'Podnikové služby',
-            'nav.manufacturing_full': 'Průmysl a výroba',
-            'nav.energy_full': 'Energetika a obnovitelné zdroje',
+            'nav.manufacturing_full': 'Průmysl',
+            'nav.energy_full': 'Energetika a PHM',
             
             // Hero Section
             'hero.title': 'Vytváříme synergie v každé transakci',
@@ -231,6 +231,7 @@ const i18n = {
             'ma_page.stats_projects_label': 'Úspěšně dokončených M&A projektů',
             'ma_page.stats_industries': '15+',
             'ma_page.stats_industries_label': 'Odvětví s prokázanou expertízou',
+            'ma_page.stats_unit': 'mld CZK',
 
             // Corporate Advisory page
             'consulting_page.title': 'Podnikové poradenství a oceňování',
@@ -255,6 +256,10 @@ const i18n = {
             'consulting_page.service6': 'Restrukturalizace a optimalizace - efektivita procesů',
             'consulting_page.service7': 'Kapitálové strategie - získávání kapitálu, strukturování',
             'consulting_page.service8': 'Exit strategie - pro zakladatele, investory, vlastníky',
+            'consulting_page.team_title': 'Multidisciplinární tým',
+            'consulting_page.team_text': 'Náš tým tvoří více než 30 profesionálů včetně právníků, účetních, transakčních specialistů a daňových poradců. Tato expertíza nám umožňuje poskytovat komplexní poradenství ve všech aspektech podnikových transakcí a strategických rozhodnutí.',
+            'consulting_page.contact_label': 'Konzultace a kontakt:',
+            'consulting_page.address_label': 'Adresa: Opletalova 39, 110 00 Praha 1',
 
             // Industry sectors - Real Estate
             'industry_realestate.title': 'Nemovitosti',
@@ -287,9 +292,10 @@ const i18n = {
             'industry_it.service3': 'Cloudové služby',
             'industry_it.service4': 'Fintech řešení',
             'industry_it.service5': 'E-commerce platformy',
-            'industry_it.service6': 'Kybernetická bezpečnost',
-            'industry_it.service7': 'Blockchain technologie',
-            'industry_it.service8': 'IoT a smart zařízení',
+            'industry_it.service6': 'Mobilní aplikace',
+            'industry_it.service7': 'Kybernetická bezpečnost',
+            'industry_it.service8': 'IoT technologie',
+            'industry_it.service9': 'Blockchain projekty',
 
             // Industry sectors - Financial Services
             'industry_finance.title': 'Finanční služby',
@@ -305,6 +311,9 @@ const i18n = {
             'industry_finance.service4': 'Fintech startupy',
             'industry_finance.service5': 'Platební systémy',
             'industry_finance.service6': 'Investiční fondy',
+            'industry_finance.service7': 'Leasing a faktoring',
+            'industry_finance.service8': 'Penzijní fondy',
+            'industry_finance.service9': 'Finanční poradenství',
 
             // Industry sectors - Automotive
             'industry_automotive.title': 'Automobilový průmysl',
@@ -320,6 +329,9 @@ const i18n = {
             'industry_automotive.service4': 'Autonomní vozidla',
             'industry_automotive.service5': 'Mobility služby',
             'industry_automotive.service6': 'Automotiv tech',
+            'industry_automotive.service7': 'Battery technology',
+            'industry_automotive.service8': 'Mobility služby',
+            'industry_automotive.service9': 'Connected cars',
 
             // Industry sectors - Transport & Logistics
             'industry_logistics.title': 'Doprava a logistika',
@@ -335,6 +347,9 @@ const i18n = {
             'industry_logistics.service4': 'Last-mile delivery',
             'industry_logistics.service5': 'Železniční doprava',
             'industry_logistics.service6': 'Letecká logistika',
+            'industry_logistics.service7': 'E-commerce logistika',
+            'industry_logistics.service8': 'Cross-docking centra',
+            'industry_logistics.service9': 'Chladírenská logistika',
 
             // Industry sectors - Energy
             'industry_energy.title': 'Energetika',
@@ -350,6 +365,9 @@ const i18n = {
             'industry_energy.service4': 'Smart grid technologie',
             'industry_energy.service5': 'Energetická účinnost',
             'industry_energy.service6': 'Tradiční energetika',
+            'industry_energy.service7': 'Vodíkové technologie',
+            'industry_energy.service8': 'Carbon capture',
+            'industry_energy.service9': 'Green hydrogen',
 
             // Industry sectors - Food & Gastronomy
             'industry_food.title': 'Gastro a potravinářství',
@@ -365,6 +383,9 @@ const i18n = {
             'industry_food.service4': 'Food tech',
             'industry_food.service5': 'Distribuce potravin',
             'industry_food.service6': 'Zemědělské podniky',
+            'industry_food.service7': 'Coffee shop řetězce',
+            'industry_food.service8': 'Food delivery',
+            'industry_food.service9': 'Organic food',
 
             // Industry sectors - Infrastructure
             'industry_infrastructure.title': 'Infrastruktura',
@@ -380,6 +401,9 @@ const i18n = {
             'industry_infrastructure.service4': 'Smart cities',
             'industry_infrastructure.service5': 'Veřejné stavby',
             'industry_infrastructure.service6': 'Komunální služby',
+            'industry_infrastructure.service7': 'Digitální infrastruktura',
+            'industry_infrastructure.service8': 'PPP projekty',
+            'industry_infrastructure.service9': 'Green infrastructure',
 
             // Industry sectors - Cryptocurrency
             'industry_crypto.title': 'Kryptoměny',
@@ -395,6 +419,9 @@ const i18n = {
             'industry_crypto.service4': 'Blockchain startupy',
             'industry_crypto.service5': 'Mining operace',
             'industry_crypto.service6': 'Web3 aplikace',
+            'industry_crypto.service7': 'Krypto platby',
+            'industry_crypto.service8': 'Web3 aplikace',
+            'industry_crypto.service9': 'Stablecoin projekty',
 
             // Industry sectors - Materials & Mining
             'industry_materials.title': 'Materiály a těžba',
@@ -410,6 +437,9 @@ const i18n = {
             'industry_materials.service4': 'Recycling technologie',
             'industry_materials.service5': 'Stavební materiály',
             'industry_materials.service6': 'Pokročilé materiály',
+            'industry_materials.service7': 'Kompozitní materiály',
+            'industry_materials.service8': 'Kritické kovy',
+            'industry_materials.service9': 'Green materials',
 
             // Industry sectors - Retail & Trade
             'industry_retail.title': 'Obchod a retail',
@@ -425,6 +455,9 @@ const i18n = {
             'industry_retail.service4': 'Nákupní centra',
             'industry_retail.service5': 'Luxury brands',
             'industry_retail.service6': 'D2C brands',
+            'industry_retail.service7': 'Franšízy',
+            'industry_retail.service8': 'Omnichannel strategie',
+            'industry_retail.service9': 'Marketplace platformy',
 
             // Industry sectors - Business Services
             'industry_business.title': 'Podnikové služby',
@@ -440,6 +473,9 @@ const i18n = {
             'industry_business.service4': 'Právní služby',
             'industry_business.service5': 'Marketing agentury',
             'industry_business.service6': 'Facility management',
+            'industry_business.service7': 'Bezpečnostní služby',
+            'industry_business.service8': 'Business consulting',
+            'industry_business.service9': 'Digitální služby',
 
             // Industry sectors - Manufacturing
             'industry_manufacturing.title': 'Průmysl',
@@ -449,12 +485,15 @@ const i18n = {
             'industry_manufacturing.description_text1': 'Průmyslová výroba se transformuje díky automatizaci, IoT a umělé inteligenci. Smart factories a udržitelná výroba definují budoucnost sektoru.',
             'industry_manufacturing.description_text2': 'Naše expertíza pokrývá tradiční výrobu i pokročilé manufacturing technologie.',
             'industry_manufacturing.services_title': 'Průmyslové oblasti',
-            'industry_manufacturing.service1': 'Strojírenský průmysl',
-            'industry_manufacturing.service2': 'Elektronika',
-            'industry_manufacturing.service3': 'Textilní průmysl',
-            'industry_manufacturing.service4': 'Plasty a polymery',
-            'industry_manufacturing.service5': 'Additivní výroba',
-            'industry_manufacturing.service6': 'Smart manufacturing',
+            'industry_manufacturing.service1': 'Strojírenství',
+            'industry_manufacturing.service2': 'Elektrotechnický průmysl',
+            'industry_manufacturing.service3': 'Zpracování kovů',
+            'industry_manufacturing.service4': 'Plastikářenský průmysl',
+            'industry_manufacturing.service5': 'Přesné strojírenství',
+            'industry_manufacturing.service6': 'Automatizace',
+            'industry_manufacturing.service7': 'Smart manufacturing',
+            'industry_manufacturing.service8': 'Industry 4.0',
+            'industry_manufacturing.service9': 'Sustainable production',
 
             // Industry sectors - Construction
             'industry_construction.title': 'Stavebnictví',
@@ -470,6 +509,9 @@ const i18n = {
             'industry_construction.service4': 'Green building',
             'industry_construction.service5': 'Construction tech',
             'industry_construction.service6': 'Facility services',
+            'industry_construction.service7': 'PropTech řešení',
+            'industry_construction.service8': 'Green building',
+            'industry_construction.service9': 'Smart construction',
 
             // Industry sectors - Healthcare
             'industry_healthcare.title': 'Zdravotnictví',
@@ -485,6 +527,9 @@ const i18n = {
             'industry_healthcare.service4': 'Telemedicína',
             'industry_healthcare.service5': 'Diagnostika',
             'industry_healthcare.service6': 'Healthcare IT',
+            'industry_healthcare.service7': 'Biotechnologie',
+            'industry_healthcare.service8': 'Digital health',
+            'industry_healthcare.service9': 'Wellness služby',
 
             // Newsletter
             'newsletter.title': 'Jste investor a chcete nové příležitosti do e-mailu?',
@@ -493,7 +538,74 @@ const i18n = {
             'newsletter.highlight': 'nezávazný',
             // Added because HTML uses newsletter.description
             'newsletter.description': 'Vyplňte náš <span class="highlight">nezávazný</span> dotazník',
-            
+
+            // Privacy Policy
+            'privacy.page_title': 'Zásady zpracování a ochrany osobních údajů - ADNP a.s.',
+            'privacy.hero_title': 'Zásady zpracování a ochrany osobních údajů',
+            'privacy.hero_description': 'Informace o tom, jak zpracováváme a chráníme vaše osobní údaje v souladu s platnou legislativou.',
+
+            'privacy.section1_title': '1. Správce osobních údajů',
+            'privacy.section1_p1': 'Správcem vašich osobních údajů je společnost <strong>ADNP a.s.</strong> se sídlem Opletalova 39, 110 00 Praha 1, IČO: 123456789, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl B, vložka 12345.',
+            'privacy.section1_p2': 'Kontaktní údaje: email <a href="mailto:info@adnp.cz">info@adnp.cz</a>',
+
+            'privacy.section2_title': '2. Účel zpracování osobních údajů',
+            'privacy.section2_intro': 'Vaše osobní údaje zpracováváme za následujícími účely:',
+            'privacy.section2_item1': 'Poskytování poradenských služeb v oblasti fúzí a akvizic',
+            'privacy.section2_item2': 'Komunikace s klienty a zájemci o naše služby',
+            'privacy.section2_item3': 'Plnění smluvních závazků',
+            'privacy.section2_item4': 'Dodržování právních povinností',
+            'privacy.section2_item5': 'Marketingová komunikace (pouze se souhlasem)',
+
+            'privacy.section3_title': '3. Právní základ zpracování',
+            'privacy.section3_intro': 'Osobní údaje zpracováváme na základě:',
+            'privacy.section3_item1': 'Plnění smlouvy nebo kroků směřujících k uzavření smlouvy',
+            'privacy.section3_item2': 'Oprávněného zájmu správce',
+            'privacy.section3_item3': 'Plnění právní povinnosti',
+            'privacy.section3_item4': 'Souhlasu subjektu údajů (pro marketingové účely)',
+
+            'privacy.section4_title': '4. Kategorie zpracovávaných údajů',
+            'privacy.section4_intro': 'Zpracováváme následující kategorie osobních údajů:',
+            'privacy.section4_item1': 'Identifikační a kontaktní údaje (jméno, příjmení, email, telefon)',
+            'privacy.section4_item2': 'Profesní údaje (pozice, společnost)',
+            'privacy.section4_item3': 'Údaje o komunikaci a jednáních',
+            'privacy.section4_item4': 'Údaje o využívání webových stránek',
+
+            'privacy.section5_title': '5. Doba zpracování',
+            'privacy.section5_intro': 'Osobní údaje zpracováváme po dobu nezbytnou k dosažení účelu zpracování, nejdéle však po dobu stanovenou právními předpisy. Konkrétní doby zpracování jsou následující:',
+            'privacy.section5_item1': 'Klientské údaje: po dobu trvání smluvního vztahu a následně 10 let',
+            'privacy.section5_item2': 'Marketingové údaje: do odvolání souhlasu',
+            'privacy.section5_item3': 'Údaje o komunikaci: 3 roky',
+
+            'privacy.section6_title': '6. Předávání údajů třetím stranám',
+            'privacy.section6_intro': 'Osobní údaje předáváme pouze v případech stanovených zákonem nebo se souhlasem subjektu údajů. Údaje mohou být předány:',
+            'privacy.section6_item1': 'Dodavatelům IT služeb',
+            'privacy.section6_item2': 'Právním a daňovým poradcům',
+            'privacy.section6_item3': 'Státním orgánům na základě právních předpisů',
+
+            'privacy.section7_title': '7. Vaše práva',
+            'privacy.section7_intro': 'V souvislosti se zpracováním osobních údajů máte následující práva:',
+            'privacy.section7_item1': 'Právo na přístup k osobním údajům',
+            'privacy.section7_item2': 'Právo na opravu nepřesných údajů',
+            'privacy.section7_item3': 'Právo na výmaz údajů',
+            'privacy.section7_item4': 'Právo na omezení zpracování',
+            'privacy.section7_item5': 'Právo na přenositelnost údajů',
+            'privacy.section7_item6': 'Právo vznést námitku proti zpracování',
+            'privacy.section7_item7': 'Právo odvolat souhlas',
+
+            'privacy.section8_title': '8. Zabezpečení údajů',
+            'privacy.section8_content': 'Přijali jsme vhodná technická a organizační opatření k ochraně osobních údajů před neoprávněným přístupem, ztrátou, zničením nebo neoprávněným zveřejněním. Pravidelně kontrolujeme a aktualizujeme naše bezpečnostní postupy.',
+
+            'privacy.section9_title': '9. Cookies',
+            'privacy.section9_content': 'Naše webové stránky používají cookies pro zlepšení uživatelského zážitku a analýzu návštěvnosti. Podrobné informace o používání cookies najdete v našich zásadách pro cookies.',
+
+            'privacy.section10_title': '10. Kontakt',
+            'privacy.section10_p1': 'V případě dotazů ohledně zpracování osobních údajů nebo uplatnění svých práv nás kontaktujte na emailu: <a href="mailto:info@adnp.cz">info@adnp.cz</a>',
+            'privacy.section10_p2': 'Máte také právo podat stížnost u Úřadu pro ochranu osobních údajů.',
+
+            'privacy.section11_title': '11. Změny zásad',
+            'privacy.section11_p1': 'Tyto zásady mohou být aktualizovány v závislosti na změnách právních předpisů nebo našich postupů. O významných změnách vás budeme informovat prostřednictvím našich webových stránek.',
+            'privacy.section11_p2': '<strong>Datum poslední aktualizace:</strong> 21. srpna 2025',
+
             // Chatbot
             'chatbot.title': 'Máte dotazy?',
             'chatbot.placeholder': 'Napište vaši zprávu...',
@@ -531,11 +643,11 @@ const i18n = {
             'nav.finance_full': 'Financial Services',
             'nav.construction_full': 'Construction and Development',
             'nav.automotive_full': 'Automotive Industry',
-            'nav.materials_full': 'Materials and Mining',
-            'nav.infrastructure_full': 'Infrastructure and Transport',
+            'nav.materials_full': 'Materials and Mining Industry',
+            'nav.infrastructure_full': 'Infrastructure',
             'nav.b2b_full': 'Corporate Services',
-            'nav.manufacturing_full': 'Industry and Manufacturing',
-            'nav.energy_full': 'Energy and Renewable Sources',
+            'nav.manufacturing_full': 'Industry',
+            'nav.energy_full': 'Energy and Fuels',
             
             // Hero Section
             'hero.title': 'Creating synergies in every transaction',
@@ -651,11 +763,12 @@ const i18n = {
             'industry_it.service1': 'Software companies',
             'industry_it.service2': 'AI and machine learning',
             'industry_it.service3': 'Cloud services',
-            'industry_it.service4': 'Fintech solutions',
-            'industry_it.service5': 'E-commerce platforms',
-            'industry_it.service6': 'Cybersecurity',
-            'industry_it.service7': 'Blockchain technology',
-            'industry_it.service8': 'IoT and smart devices',
+            'industry_it.service4': 'E-commerce platforms',
+            'industry_it.service5': 'Fintech solutions',
+            'industry_it.service6': 'Mobile applications',
+            'industry_it.service7': 'Cybersecurity',
+            'industry_it.service8': 'IoT technology',
+            'industry_it.service9': 'Blockchain projects',
 
             // Industry sectors - Financial Services
             'industry_finance.title': 'Financial Services',
@@ -665,12 +778,15 @@ const i18n = {
             'industry_finance.description_text1': 'The financial sector is undergoing rapid transformation due to digitalization, regulatory changes and new business models. Our expertise covers traditional banking as well as innovative fintech solutions.',
             'industry_finance.description_text2': 'We specialize in transactions that require deep understanding of risks, compliance and value factors specific to financial institutions.',
             'industry_finance.services_title': 'Our specialization',
-            'industry_finance.service1': 'Banks and credit institutions',
-            'industry_finance.service2': 'Insurance companies',
+            'industry_finance.service1': 'Banking',
+            'industry_finance.service2': 'Insurance',
             'industry_finance.service3': 'Asset management',
-            'industry_finance.service4': 'Fintech startups',
-            'industry_finance.service5': 'Payment systems',
-            'industry_finance.service6': 'Investment funds',
+            'industry_finance.service4': 'Fintech solutions',
+            'industry_finance.service5': 'Payment services',
+            'industry_finance.service6': 'Capital markets',
+            'industry_finance.service7': 'Leasing and factoring',
+            'industry_finance.service8': 'Pension funds',
+            'industry_finance.service9': 'Financial advisory',
 
             // Industry sectors - Automotive
             'industry_automotive.title': 'Automotive Industry',
@@ -680,12 +796,15 @@ const i18n = {
             'industry_automotive.description_text1': 'The automotive industry is experiencing the biggest transformation in the last 100 years. Electrification, autonomous driving and new mobility concepts are rewriting the rules of the game.',
             'industry_automotive.description_text2': 'Our expertise covers the entire value chain from manufacturers to component suppliers and new mobility services.',
             'industry_automotive.services_title': 'Our specialization',
-            'industry_automotive.service1': 'Car manufacturers',
-            'industry_automotive.service2': 'Component suppliers',
-            'industry_automotive.service3': 'Electromobility',
-            'industry_automotive.service4': 'Autonomous vehicles',
-            'industry_automotive.service5': 'Mobility services',
-            'industry_automotive.service6': 'Automotive tech',
+            'industry_automotive.service1': 'Vehicle manufacturers',
+            'industry_automotive.service2': 'Electromobility',
+            'industry_automotive.service3': 'Autonomous systems',
+            'industry_automotive.service4': 'Component suppliers',
+            'industry_automotive.service5': 'Charging infrastructure',
+            'industry_automotive.service6': 'Automotive software',
+            'industry_automotive.service7': 'Battery technology',
+            'industry_automotive.service8': 'Mobility services',
+            'industry_automotive.service9': 'Connected cars',
 
             // Industry sectors - Transport & Logistics
             'industry_logistics.title': 'Transport and Logistics',
@@ -695,12 +814,15 @@ const i18n = {
             'industry_logistics.description_text1': 'Logistics represents critical infrastructure of the global economy. E-commerce and digitalization are changing requirements for speed and efficiency of deliveries.',
             'industry_logistics.description_text2': 'We specialize in transactions involving traditional logistics as well as innovative technologies such as autonomous vehicles and drones.',
             'industry_logistics.services_title': 'What we cover',
-            'industry_logistics.service1': 'Freight transport',
-            'industry_logistics.service2': 'Warehousing and distribution',
-            'industry_logistics.service3': 'E-commerce logistics',
-            'industry_logistics.service4': 'Last-mile delivery',
-            'industry_logistics.service5': 'Rail transport',
-            'industry_logistics.service6': 'Air logistics',
+            'industry_logistics.service1': 'Transport companies',
+            'industry_logistics.service2': 'Warehouse complexes',
+            'industry_logistics.service3': 'Supply chain solutions',
+            'industry_logistics.service4': 'Courier services',
+            'industry_logistics.service5': 'Freight forwarding',
+            'industry_logistics.service6': 'Logistics parks',
+            'industry_logistics.service7': 'E-commerce logistics',
+            'industry_logistics.service8': 'Cross-docking centers',
+            'industry_logistics.service9': 'Cold chain logistics',
 
             // Industry sectors - Energy
             'industry_energy.title': 'Energy',
@@ -716,6 +838,9 @@ const i18n = {
             'industry_energy.service4': 'Smart grid technology',
             'industry_energy.service5': 'Energy efficiency',
             'industry_energy.service6': 'Traditional energy',
+            'industry_energy.service7': 'Hydrogen technologies',
+            'industry_energy.service8': 'Carbon capture',
+            'industry_energy.service9': 'Green hydrogen',
 
             // Industry sectors - Food & Gastronomy
             'industry_food.title': 'Food and Gastronomy',
@@ -725,12 +850,15 @@ const i18n = {
             'industry_food.description_text1': 'The food sector represents one of the most stable segments of the economy. Trends such as health food, organic and sustainable farming are changing market dynamics.',
             'industry_food.description_text2': 'We specialize in the entire value chain from agriculture through processing to distribution and restaurants.',
             'industry_food.services_title': 'We cover areas',
-            'industry_food.service1': 'Food manufacturers',
-            'industry_food.service2': 'Restaurant chains',
-            'industry_food.service3': 'Organic producers',
-            'industry_food.service4': 'Food tech',
-            'industry_food.service5': 'Food distribution',
-            'industry_food.service6': 'Agricultural enterprises',
+            'industry_food.service1': 'Restaurants and chains',
+            'industry_food.service2': 'Food production',
+            'industry_food.service3': 'Beverage companies',
+            'industry_food.service4': 'Food-tech startups',
+            'industry_food.service5': 'Catering services',
+            'industry_food.service6': 'Breweries',
+            'industry_food.service7': 'Coffee shop chains',
+            'industry_food.service8': 'Food delivery',
+            'industry_food.service9': 'Organic food',
 
             // Industry sectors - Infrastructure
             'industry_infrastructure.title': 'Infrastructure',
@@ -741,11 +869,14 @@ const i18n = {
             'industry_infrastructure.description_text2': 'Our expertise covers traditional infrastructure as well as modern smart solutions.',
             'industry_infrastructure.services_title': 'Infrastructure areas',
             'industry_infrastructure.service1': 'Transport infrastructure',
-            'industry_infrastructure.service2': 'Telecommunications',
-            'industry_infrastructure.service3': 'Water management',
-            'industry_infrastructure.service4': 'Smart cities',
-            'industry_infrastructure.service5': 'Public buildings',
-            'industry_infrastructure.service6': 'Municipal services',
+            'industry_infrastructure.service2': 'Water management',
+            'industry_infrastructure.service3': 'Telecommunication networks',
+            'industry_infrastructure.service4': 'Waste management',
+            'industry_infrastructure.service5': 'Energy networks',
+            'industry_infrastructure.service6': 'Smart city solutions',
+            'industry_infrastructure.service7': 'Digital infrastructure',
+            'industry_infrastructure.service8': 'PPP projects',
+            'industry_infrastructure.service9': 'Green infrastructure',
 
             // Industry sectors - Cryptocurrency
             'industry_crypto.title': 'Cryptocurrency',
@@ -761,6 +892,9 @@ const i18n = {
             'industry_crypto.service4': 'Blockchain startups',
             'industry_crypto.service5': 'Mining operations',
             'industry_crypto.service6': 'Web3 applications',
+            'industry_crypto.service7': 'Crypto payments',
+            'industry_crypto.service8': 'Web3 applications',
+            'industry_crypto.service9': 'Stablecoin projects',
 
             // Industry sectors - Materials & Mining
             'industry_materials.title': 'Materials and Mining',
@@ -776,6 +910,9 @@ const i18n = {
             'industry_materials.service4': 'Recycling technology',
             'industry_materials.service5': 'Construction materials',
             'industry_materials.service6': 'Advanced materials',
+            'industry_materials.service7': 'Composite materials',
+            'industry_materials.service8': 'Critical metals',
+            'industry_materials.service9': 'Green materials',
 
             // Industry sectors - Retail & Trade
             'industry_retail.title': 'Trade and Retail',
@@ -785,12 +922,15 @@ const i18n = {
             'industry_retail.description_text1': 'Retail is undergoing fundamental transformation. Omnichannel approach, e-commerce and new technologies like AR/VR are changing customer experience.',
             'industry_retail.description_text2': 'Our expertise covers traditional retail as well as cutting-edge e-commerce solutions.',
             'industry_retail.services_title': 'Retail areas',
-            'industry_retail.service1': 'Retail chains',
-            'industry_retail.service2': 'E-commerce platforms',
-            'industry_retail.service3': 'Fashion retail',
+            'industry_retail.service1': 'E-commerce platforms',
+            'industry_retail.service2': 'Retail chains',
+            'industry_retail.service3': 'Distribution networks',
             'industry_retail.service4': 'Shopping centers',
-            'industry_retail.service5': 'Luxury brands',
-            'industry_retail.service6': 'D2C brands',
+            'industry_retail.service5': 'Fashion retail',
+            'industry_retail.service6': 'Food retail chains',
+            'industry_retail.service7': 'Franchises',
+            'industry_retail.service8': 'Omnichannel strategies',
+            'industry_retail.service9': 'Marketplace platforms',
 
             // Industry sectors - Business Services
             'industry_business.title': 'Business Services',
@@ -800,12 +940,15 @@ const i18n = {
             'industry_business.description_text1': 'Business services enable companies to focus on their core business. Digitalization and automation are changing the nature of many services.',
             'industry_business.description_text2': 'We specialize in transactions in traditional as well as tech-enabled business services.',
             'industry_business.services_title': 'Business services',
-            'industry_business.service1': 'IT outsourcing',
-            'industry_business.service2': 'HR services',
-            'industry_business.service3': 'Accounting services',
-            'industry_business.service4': 'Legal services',
-            'industry_business.service5': 'Marketing agencies',
+            'industry_business.service1': 'Accounting services',
+            'industry_business.service2': 'Legal services',
+            'industry_business.service3': 'HR outsourcing',
+            'industry_business.service4': 'IT services',
+            'industry_business.service5': 'Marketing services',
             'industry_business.service6': 'Facility management',
+            'industry_business.service7': 'Security services',
+            'industry_business.service8': 'Business consulting',
+            'industry_business.service9': 'Digital services',
 
             // Industry sectors - Manufacturing
             'industry_manufacturing.title': 'Manufacturing',
@@ -816,11 +959,14 @@ const i18n = {
             'industry_manufacturing.description_text2': 'Our expertise covers traditional manufacturing as well as advanced manufacturing technologies.',
             'industry_manufacturing.services_title': 'Industrial areas',
             'industry_manufacturing.service1': 'Mechanical engineering',
-            'industry_manufacturing.service2': 'Electronics',
-            'industry_manufacturing.service3': 'Textile industry',
-            'industry_manufacturing.service4': 'Plastics and polymers',
-            'industry_manufacturing.service5': 'Additive manufacturing',
-            'industry_manufacturing.service6': 'Smart manufacturing',
+            'industry_manufacturing.service2': 'Electrical engineering',
+            'industry_manufacturing.service3': 'Metal processing',
+            'industry_manufacturing.service4': 'Plastics industry',
+            'industry_manufacturing.service5': 'Precision engineering',
+            'industry_manufacturing.service6': 'Automation',
+            'industry_manufacturing.service7': 'Smart manufacturing',
+            'industry_manufacturing.service8': 'Industry 4.0',
+            'industry_manufacturing.service9': 'Sustainable production',
 
             // Industry sectors - Construction
             'industry_construction.title': 'Construction',
@@ -831,11 +977,14 @@ const i18n = {
             'industry_construction.description_text2': 'We specialize in the entire construction sector from developers to specialized suppliers.',
             'industry_construction.services_title': 'Construction areas',
             'industry_construction.service1': 'Construction companies',
-            'industry_construction.service2': 'Developers',
+            'industry_construction.service2': 'Development projects',
             'industry_construction.service3': 'Infrastructure construction',
-            'industry_construction.service4': 'Green building',
-            'industry_construction.service5': 'Construction tech',
-            'industry_construction.service6': 'Facility services',
+            'industry_construction.service4': 'Construction materials',
+            'industry_construction.service5': 'Architectural studios',
+            'industry_construction.service6': 'Engineering services',
+            'industry_construction.service7': 'PropTech solutions',
+            'industry_construction.service8': 'Green building',
+            'industry_construction.service9': 'Smart construction',
 
             // Industry sectors - Healthcare
             'industry_healthcare.title': 'Healthcare',
@@ -851,6 +1000,9 @@ const i18n = {
             'industry_healthcare.service4': 'Telemedicine',
             'industry_healthcare.service5': 'Diagnostics',
             'industry_healthcare.service6': 'Healthcare IT',
+            'industry_healthcare.service7': 'Biotechnology',
+            'industry_healthcare.service8': 'Digital health',
+            'industry_healthcare.service9': 'Wellness services',
 
             // Projects page
             'projects.title': 'Projects',
@@ -930,6 +1082,7 @@ const i18n = {
             'ma_page.stats_projects_label': 'Successfully completed M&A projects',
             'ma_page.stats_industries': '15+',
             'ma_page.stats_industries_label': 'Industries with proven expertise',
+            'ma_page.stats_unit': 'billion CZK',
 
             // Corporate Advisory page
             'consulting_page.title': 'Corporate Advisory & Valuation',
@@ -954,6 +1107,10 @@ const i18n = {
             'consulting_page.service6': 'Restructuring and optimization - process efficiency',
             'consulting_page.service7': 'Capital strategies - capital raising, structuring',
             'consulting_page.service8': 'Exit strategies - for founders, investors, owners',
+            'consulting_page.team_title': 'Multidisciplinary Team',
+            'consulting_page.team_text': 'Our team consists of more than 30 professionals including lawyers, accountants, transaction specialists, and tax advisors. This expertise enables us to provide comprehensive advisory services in all aspects of corporate transactions and strategic decisions.',
+            'consulting_page.contact_label': 'Consultation and Contact:',
+            'consulting_page.address_label': 'Address: Opletalova 39, 110 00 Prague 1',
 
             // Industry sectors - Real Estate
             'industry_realestate.title': 'Real Estate',
@@ -1019,6 +1176,9 @@ const i18n = {
             'industry_automotive.service4': 'Autonomous vehicles',
             'industry_automotive.service5': 'Mobility services',
             'industry_automotive.service6': 'Automotive tech',
+            'industry_automotive.service7': 'Battery technology',
+            'industry_automotive.service8': 'Mobility services',
+            'industry_automotive.service9': 'Connected cars',
 
             // Industry sectors - Transport & Logistics
             'industry_logistics.title': 'Transport & Logistics',
@@ -1049,6 +1209,9 @@ const i18n = {
             'industry_energy.service4': 'Smart grid technology',
             'industry_energy.service5': 'Energy efficiency',
             'industry_energy.service6': 'Traditional energy',
+            'industry_energy.service7': 'Hydrogen technologies',
+            'industry_energy.service8': 'Carbon capture',
+            'industry_energy.service9': 'Green hydrogen',
 
             // Industry sectors - Food & Gastronomy
             'industry_food.title': 'Food & Gastronomy',
@@ -1094,6 +1257,9 @@ const i18n = {
             'industry_crypto.service4': 'Blockchain startups',
             'industry_crypto.service5': 'Mining operations',
             'industry_crypto.service6': 'Web3 applications',
+            'industry_crypto.service7': 'Crypto payments',
+            'industry_crypto.service8': 'Web3 applications',
+            'industry_crypto.service9': 'Stablecoin projects',
 
             // Industry sectors - Materials & Mining
             'industry_materials.title': 'Materials & Mining',
@@ -1109,6 +1275,9 @@ const i18n = {
             'industry_materials.service4': 'Recycling technologies',
             'industry_materials.service5': 'Construction materials',
             'industry_materials.service6': 'Advanced materials',
+            'industry_materials.service7': 'Composite materials',
+            'industry_materials.service8': 'Critical metals',
+            'industry_materials.service9': 'Green materials',
 
             // Industry sectors - Retail & Trade
             'industry_retail.title': 'Retail & Trade',
@@ -1219,7 +1388,74 @@ const i18n = {
             'newsletter.highlight': 'non-binding',
             // Added because HTML uses newsletter.description
             'newsletter.description': 'Fill out our <span class="highlight">non-binding</span> questionnaire',
-            
+
+            // Privacy Policy
+            'privacy.page_title': 'Privacy Policy and Personal Data Protection - ADNP a.s.',
+            'privacy.hero_title': 'Privacy Policy and Personal Data Protection',
+            'privacy.hero_description': 'Information about how we process and protect your personal data in accordance with applicable legislation.',
+
+            'privacy.section1_title': '1. Data Controller',
+            'privacy.section1_p1': 'The controller of your personal data is <strong>ADNP a.s.</strong> with registered office at Opletalova 39, 110 00 Prague 1, Company ID: 123456789, registered in the Commercial Register maintained by the Municipal Court in Prague, Section B, Insert 12345.',
+            'privacy.section1_p2': 'Contact details: email <a href="mailto:info@adnp.cz">info@adnp.cz</a>',
+
+            'privacy.section2_title': '2. Purpose of Personal Data Processing',
+            'privacy.section2_intro': 'We process your personal data for the following purposes:',
+            'privacy.section2_item1': 'Providing consulting services in mergers and acquisitions',
+            'privacy.section2_item2': 'Communication with clients and prospective clients',
+            'privacy.section2_item3': 'Fulfillment of contractual obligations',
+            'privacy.section2_item4': 'Compliance with legal obligations',
+            'privacy.section2_item5': 'Marketing communication (only with consent)',
+
+            'privacy.section3_title': '3. Legal Basis for Processing',
+            'privacy.section3_intro': 'We process personal data on the basis of:',
+            'privacy.section3_item1': 'Performance of contract or steps leading to contract conclusion',
+            'privacy.section3_item2': 'Legitimate interest of the controller',
+            'privacy.section3_item3': 'Compliance with legal obligations',
+            'privacy.section3_item4': 'Consent of the data subject (for marketing purposes)',
+
+            'privacy.section4_title': '4. Categories of Processed Data',
+            'privacy.section4_intro': 'We process the following categories of personal data:',
+            'privacy.section4_item1': 'Identification and contact data (name, surname, email, phone)',
+            'privacy.section4_item2': 'Professional data (position, company)',
+            'privacy.section4_item3': 'Communication and meeting data',
+            'privacy.section4_item4': 'Website usage data',
+
+            'privacy.section5_title': '5. Retention Period',
+            'privacy.section5_intro': 'We process personal data for the period necessary to achieve the purpose of processing, but no longer than the period stipulated by legal regulations. Specific retention periods are as follows:',
+            'privacy.section5_item1': 'Client data: for the duration of the contractual relationship and subsequently 10 years',
+            'privacy.section5_item2': 'Marketing data: until consent is withdrawn',
+            'privacy.section5_item3': 'Communication data: 3 years',
+
+            'privacy.section6_title': '6. Data Disclosure to Third Parties',
+            'privacy.section6_intro': 'We disclose personal data only in cases stipulated by law or with the consent of the data subject. Data may be disclosed to:',
+            'privacy.section6_item1': 'IT service providers',
+            'privacy.section6_item2': 'Legal and tax advisors',
+            'privacy.section6_item3': 'State authorities based on legal regulations',
+
+            'privacy.section7_title': '7. Your Rights',
+            'privacy.section7_intro': 'In relation to the processing of personal data, you have the following rights:',
+            'privacy.section7_item1': 'Right to access personal data',
+            'privacy.section7_item2': 'Right to rectification of inaccurate data',
+            'privacy.section7_item3': 'Right to erasure of data',
+            'privacy.section7_item4': 'Right to restriction of processing',
+            'privacy.section7_item5': 'Right to data portability',
+            'privacy.section7_item6': 'Right to object to processing',
+            'privacy.section7_item7': 'Right to withdraw consent',
+
+            'privacy.section8_title': '8. Data Security',
+            'privacy.section8_content': 'We have implemented appropriate technical and organizational measures to protect personal data against unauthorized access, loss, destruction or unauthorized disclosure. We regularly review and update our security procedures.',
+
+            'privacy.section9_title': '9. Cookies',
+            'privacy.section9_content': 'Our website uses cookies to improve user experience and analyze traffic. Detailed information about the use of cookies can be found in our cookie policy.',
+
+            'privacy.section10_title': '10. Contact',
+            'privacy.section10_p1': 'If you have any questions regarding the processing of personal data or wish to exercise your rights, please contact us at: <a href="mailto:info@adnp.cz">info@adnp.cz</a>',
+            'privacy.section10_p2': 'You also have the right to lodge a complaint with the Office for Personal Data Protection.',
+
+            'privacy.section11_title': '11. Policy Changes',
+            'privacy.section11_p1': 'This policy may be updated depending on changes in legal regulations or our procedures. We will inform you of significant changes through our website.',
+            'privacy.section11_p2': '<strong>Last updated:</strong> August 21, 2025',
+
             // Chatbot
             'chatbot.title': 'Questions?',
             'chatbot.placeholder': 'Type your message...',
@@ -1245,7 +1481,24 @@ const i18n = {
             'nav.about': 'Über uns',
             'nav.ma': 'Fusionen & Übernahmen',
             'nav.consulting': 'Unternehmensberatung & Bewertung',
-            
+
+            // Navigation - Industries detailed
+            'nav.real_estate': 'Immobilien',
+            'nav.it_full': 'Digitale Technologie und IT',
+            'nav.retail_full': 'Handel und Einzelhandel',
+            'nav.logistics_full': 'Transport und Logistik',
+            'nav.healthcare': 'Gesundheitswesen',
+            'nav.gastro_full': 'Gastronomie, Lebensmittelindustrie und Getränke',
+            'nav.crypto': 'Kryptowährungen',
+            'nav.finance_full': 'Finanzdienstleistungen',
+            'nav.construction_full': 'Bauwesen und Entwicklung',
+            'nav.automotive_full': 'Automobilindustrie',
+            'nav.materials_full': 'Materialien und Bergbau',
+            'nav.infrastructure_full': 'Infrastruktur',
+            'nav.b2b_full': 'Unternehmensdienstleistungen',
+            'nav.manufacturing_full': 'Industrie',
+            'nav.energy_full': 'Energie und Treibstoffe',
+
             // Hero Section
             'hero.title': 'Synergien schaffen in jeder Transaktion',
             'hero.description': 'Wir sind ein Team von Fachleuten, die sich auf Fusionen und Übernahmen spezialisiert haben. Unsere Expertise basiert auf Zahlen, tiefem Verständnis und anschließenden optimalen Lösungen; wir werden alles tun, um den Erfolg Ihres Projekts sicherzustellen.',
@@ -1360,11 +1613,12 @@ const i18n = {
             'industry_it.service1': 'Software-Unternehmen',
             'industry_it.service2': 'KI und maschinelles Lernen',
             'industry_it.service3': 'Cloud-Dienste',
-            'industry_it.service4': 'Fintech-Lösungen',
-            'industry_it.service5': 'E-Commerce-Plattformen',
-            'industry_it.service6': 'Cybersicherheit',
-            'industry_it.service7': 'Blockchain-Technologie',
-            'industry_it.service8': 'IoT und intelligente Geräte',
+            'industry_it.service4': 'E-Commerce-Plattformen',
+            'industry_it.service5': 'Fintech-Lösungen',
+            'industry_it.service6': 'Mobile Anwendungen',
+            'industry_it.service7': 'Cybersicherheit',
+            'industry_it.service8': 'IoT-Technologie',
+            'industry_it.service9': 'Blockchain-Projekte',
 
             // Industry sectors - Financial Services
             'industry_finance.title': 'Finanzdienstleistungen',
@@ -1377,9 +1631,12 @@ const i18n = {
             'industry_finance.service1': 'Banken und Kreditinstitute',
             'industry_finance.service2': 'Versicherungsunternehmen',
             'industry_finance.service3': 'Vermögensverwaltung',
-            'industry_finance.service4': 'Fintech-Startups',
-            'industry_finance.service5': 'Zahlungssysteme',
-            'industry_finance.service6': 'Investmentfonds',
+            'industry_finance.service4': 'Fintech-Lösungen',
+            'industry_finance.service5': 'Zahlungsdienste',
+            'industry_finance.service6': 'Kapitalmärkte',
+            'industry_finance.service7': 'Leasing und Factoring',
+            'industry_finance.service8': 'Pensionsfonds',
+            'industry_finance.service9': 'Finanzberatung',
 
             // Industry sectors - Automotive
             'industry_automotive.title': 'Automobilindustrie',
@@ -1389,12 +1646,15 @@ const i18n = {
             'industry_automotive.description_text1': 'Die Automobilindustrie erlebt die größte Transformation der letzten 100 Jahre. Elektrifizierung, autonomes Fahren und neue Mobilitätskonzepte schreiben die Spielregeln neu.',
             'industry_automotive.description_text2': 'Unsere Expertise umfasst die gesamte Wertschöpfungskette von Herstellern bis zu Komponentenlieferanten und neuen Mobilitätsdiensten.',
             'industry_automotive.services_title': 'Unsere Spezialisierung',
-            'industry_automotive.service1': 'Automobilhersteller',
-            'industry_automotive.service2': 'Komponentenlieferanten',
-            'industry_automotive.service3': 'Elektromobilität',
-            'industry_automotive.service4': 'Autonome Fahrzeuge',
-            'industry_automotive.service5': 'Mobilitätsdienste',
-            'industry_automotive.service6': 'Automotive-Tech',
+            'industry_automotive.service1': 'Fahrzeughersteller',
+            'industry_automotive.service2': 'Elektromobilität',
+            'industry_automotive.service3': 'Autonome Systeme',
+            'industry_automotive.service4': 'Komponentenlieferanten',
+            'industry_automotive.service5': 'Ladeinfrastruktur',
+            'industry_automotive.service6': 'Automotive-Software',
+            'industry_automotive.service7': 'Battery-Technologie',
+            'industry_automotive.service8': 'Mobilitätsdienste',
+            'industry_automotive.service9': 'Connected Cars',
 
             // Industry sectors - Transport & Logistics
             'industry_logistics.title': 'Transport und Logistik',
@@ -1404,12 +1664,15 @@ const i18n = {
             'industry_logistics.description_text1': 'Logistik stellt kritische Infrastruktur der Weltwirtschaft dar. E-Commerce und Digitalisierung verändern die Anforderungen an Geschwindigkeit und Effizienz von Lieferungen.',
             'industry_logistics.description_text2': 'Wir spezialisieren uns auf Transaktionen, die traditionelle Logistik sowie innovative Technologien wie autonome Fahrzeuge und Drohnen umfassen.',
             'industry_logistics.services_title': 'Was wir abdecken',
-            'industry_logistics.service1': 'Gütertransport',
-            'industry_logistics.service2': 'Lagerung und Distribution',
-            'industry_logistics.service3': 'E-Commerce-Logistik',
-            'industry_logistics.service4': 'Last-Mile-Lieferung',
-            'industry_logistics.service5': 'Schienentransport',
-            'industry_logistics.service6': 'Luftlogistik',
+            'industry_logistics.service1': 'Transportunternehmen',
+            'industry_logistics.service2': 'Lagerkomplexe',
+            'industry_logistics.service3': 'Supply-Chain-Lösungen',
+            'industry_logistics.service4': 'Kurierdienste',
+            'industry_logistics.service5': 'Freight Forwarding',
+            'industry_logistics.service6': 'Logistikparks',
+            'industry_logistics.service7': 'E-Commerce-Logistik',
+            'industry_logistics.service8': 'Cross-Docking-Zentren',
+            'industry_logistics.service9': 'Kühlkettenlogistik',
 
             // Industry sectors - Energy
             'industry_energy.title': 'Energiewirtschaft',
@@ -1420,11 +1683,14 @@ const i18n = {
             'industry_energy.description_text2': 'Unsere Expertise umfasst traditionelle Energie sowie modernste Technologien wie Energiespeicher und intelligente Netze.',
             'industry_energy.services_title': 'Energiebereiche',
             'industry_energy.service1': 'Erneuerbare Quellen',
-            'industry_energy.service2': 'Solar- und Windenergie',
-            'industry_energy.service3': 'Energiespeicher',
-            'industry_energy.service4': 'Smart-Grid-Technologie',
-            'industry_energy.service5': 'Energieeffizienz',
-            'industry_energy.service6': 'Traditionelle Energie',
+            'industry_energy.service2': 'Kraftwerke',
+            'industry_energy.service3': 'Energieverteilung',
+            'industry_energy.service4': 'Öl- und Gassektor',
+            'industry_energy.service5': 'Energy Storage',
+            'industry_energy.service6': 'Smart Grid',
+            'industry_energy.service7': 'Wasserstofftechnologien',
+            'industry_energy.service8': 'Carbon Capture',
+            'industry_energy.service9': 'Grüner Wasserstoff',
 
             // Industry sectors - Food & Gastronomy
             'industry_food.title': 'Gastronomie und Lebensmittel',
@@ -1434,12 +1700,15 @@ const i18n = {
             'industry_food.description_text1': 'Der Lebensmittelsektor stellt eines der stabilsten Segmente der Wirtschaft dar. Trends wie gesunde Lebensmittel, Bio und nachhaltige Landwirtschaft verändern die Marktdynamik.',
             'industry_food.description_text2': 'Wir spezialisieren uns auf die gesamte Wertschöpfungskette von der Landwirtschaft über die Verarbeitung bis hin zu Distribution und Restaurants.',
             'industry_food.services_title': 'Wir decken Bereiche ab',
-            'industry_food.service1': 'Lebensmittelhersteller',
-            'industry_food.service2': 'Restaurantketten',
-            'industry_food.service3': 'Bio-Produzenten',
-            'industry_food.service4': 'Food-Tech',
-            'industry_food.service5': 'Lebensmitteldistribution',
-            'industry_food.service6': 'Landwirtschaftsbetriebe',
+            'industry_food.service1': 'Restaurants und Ketten',
+            'industry_food.service2': 'Lebensmittelproduktion',
+            'industry_food.service3': 'Getränkeunternehmen',
+            'industry_food.service4': 'Food-Tech-Startups',
+            'industry_food.service5': 'Catering-Dienste',
+            'industry_food.service6': 'Brauereiwesen',
+            'industry_food.service7': 'Coffeeshop-Ketten',
+            'industry_food.service8': 'Food Delivery',
+            'industry_food.service9': 'Organic Food',
 
             // Industry sectors - Infrastructure
             'industry_infrastructure.title': 'Infrastruktur',
@@ -1452,9 +1721,12 @@ const i18n = {
             'industry_infrastructure.service1': 'Verkehrsinfrastruktur',
             'industry_infrastructure.service2': 'Telekommunikation',
             'industry_infrastructure.service3': 'Wasserwirtschaft',
-            'industry_infrastructure.service4': 'Smart Cities',
-            'industry_infrastructure.service5': 'Öffentliche Gebäude',
-            'industry_infrastructure.service6': 'Kommunale Dienste',
+            'industry_infrastructure.service4': 'Abfallwirtschaft',
+            'industry_infrastructure.service5': 'Energienetze',
+            'industry_infrastructure.service6': 'Smart-City-Lösungen',
+            'industry_infrastructure.service7': 'Digitale Infrastruktur',
+            'industry_infrastructure.service8': 'PPP-Projekte',
+            'industry_infrastructure.service9': 'Grüne Infrastruktur',
 
             // Industry sectors - Cryptocurrency
             'industry_crypto.title': 'Kryptowährungen',
@@ -1465,11 +1737,14 @@ const i18n = {
             'industry_crypto.description_text2': 'Wir spezialisieren uns auf Transaktionen in diesem hochspezialisierten und regulatorisch komplexen Umfeld.',
             'industry_crypto.services_title': 'Crypto-Spezialisierung',
             'industry_crypto.service1': 'Krypto-Börsen',
-            'industry_crypto.service2': 'DeFi-Protokolle',
-            'industry_crypto.service3': 'NFT-Projekte',
-            'industry_crypto.service4': 'Blockchain-Startups',
-            'industry_crypto.service5': 'Mining-Operationen',
-            'industry_crypto.service6': 'Web3-Anwendungen',
+            'industry_crypto.service2': 'Blockchain-Projekte',
+            'industry_crypto.service3': 'DeFi-Protokolle',
+            'industry_crypto.service4': 'NFT-Plattformen',
+            'industry_crypto.service5': 'Mining-Unternehmen',
+            'industry_crypto.service6': 'Wallet-Dienste',
+            'industry_crypto.service7': 'Krypto-Zahlungen',
+            'industry_crypto.service8': 'Web3-Anwendungen',
+            'industry_crypto.service9': 'Stablecoin-Projekte',
 
             // Industry sectors - Materials & Mining
             'industry_materials.title': 'Materialien und Bergbau',
@@ -1479,12 +1754,15 @@ const i18n = {
             'industry_materials.description_text1': 'Der Materialien- und Bergbausektor liefert Grundstoffe für die meisten Industriezweige. Nachhaltigkeit und Kreislaufwirtschaft verändern die Ansätze für Bergbau und Verarbeitung.',
             'industry_materials.description_text2': 'Wir spezialisieren uns auf Transaktionen in der traditionellen sowie modernen Materialindustrie einschließlich Recycling-Technologien.',
             'industry_materials.services_title': 'Materialbereiche',
-            'industry_materials.service1': 'Bergbauunternehmen',
-            'industry_materials.service2': 'Stahlindustrie',
-            'industry_materials.service3': 'Chemieindustrie',
-            'industry_materials.service4': 'Recycling-Technologie',
-            'industry_materials.service5': 'Baumaterialien',
-            'industry_materials.service6': 'Fortgeschrittene Materialien',
+            'industry_materials.service1': 'Rohstoffgewinnung',
+            'industry_materials.service2': 'Metallurgische Industrie',
+            'industry_materials.service3': 'Baumaterialien',
+            'industry_materials.service4': 'Chemische Industrie',
+            'industry_materials.service5': 'Recycling-Technologien',
+            'industry_materials.service6': 'Spezialmaterialien',
+            'industry_materials.service7': 'Verbundmaterialien',
+            'industry_materials.service8': 'Kritische Metalle',
+            'industry_materials.service9': 'Grüne Materialien',
 
             // Industry sectors - Retail & Trade
             'industry_retail.title': 'Handel und Einzelhandel',
@@ -1494,12 +1772,15 @@ const i18n = {
             'industry_retail.description_text1': 'Der Einzelhandel durchläuft eine grundlegende Transformation. Omnichannel-Ansatz, E-Commerce und neue Technologien wie AR/VR verändern das Kundenerlebnis.',
             'industry_retail.description_text2': 'Unsere Expertise umfasst traditionellen Einzelhandel sowie modernste E-Commerce-Lösungen.',
             'industry_retail.services_title': 'Einzelhandelsbereiche',
-            'industry_retail.service1': 'Einzelhandelsketten',
-            'industry_retail.service2': 'E-Commerce-Plattformen',
-            'industry_retail.service3': 'Mode-Einzelhandel',
+            'industry_retail.service1': 'E-Commerce-Plattformen',
+            'industry_retail.service2': 'Einzelhandelsketten',
+            'industry_retail.service3': 'Vertriebsnetze',
             'industry_retail.service4': 'Einkaufszentren',
-            'industry_retail.service5': 'Luxusmarken',
-            'industry_retail.service6': 'D2C-Marken',
+            'industry_retail.service5': 'Fashion-Retail',
+            'industry_retail.service6': 'Lebensmittelketten',
+            'industry_retail.service7': 'Franchises',
+            'industry_retail.service8': 'Omnichannel-Strategien',
+            'industry_retail.service9': 'Marketplace-Plattformen',
 
             // Industry sectors - Business Services
             'industry_business.title': 'Unternehmensdienstleistungen',
@@ -1509,12 +1790,15 @@ const i18n = {
             'industry_business.description_text1': 'Unternehmensdienstleistungen ermöglichen es Unternehmen, sich auf ihr Kerngeschäft zu konzentrieren. Digitalisierung und Automatisierung verändern die Natur vieler Dienstleistungen.',
             'industry_business.description_text2': 'Wir spezialisieren uns auf Transaktionen in traditionellen sowie technologiegestützten Unternehmensdienstleistungen.',
             'industry_business.services_title': 'Unternehmensdienstleistungen',
-            'industry_business.service1': 'IT-Outsourcing',
-            'industry_business.service2': 'HR-Dienstleistungen',
-            'industry_business.service3': 'Buchhaltungsdienstleistungen',
-            'industry_business.service4': 'Rechtsdienstleistungen',
+            'industry_business.service1': 'Beratungsdienste',
+            'industry_business.service2': 'IT-Outsourcing',
+            'industry_business.service3': 'Buchhaltungsdienste',
+            'industry_business.service4': 'HR-Services',
             'industry_business.service5': 'Marketing-Agenturen',
-            'industry_business.service6': 'Facility Management',
+            'industry_business.service6': 'Rechtsdienstleistungen',
+            'industry_business.service7': 'Sicherheitsdienste',
+            'industry_business.service8': 'Business Consulting',
+            'industry_business.service9': 'Digitale Dienste',
 
             // Industry sectors - Manufacturing
             'industry_manufacturing.title': 'Industrie',
@@ -1527,9 +1811,12 @@ const i18n = {
             'industry_manufacturing.service1': 'Maschinenbau',
             'industry_manufacturing.service2': 'Elektronik',
             'industry_manufacturing.service3': 'Textilindustrie',
-            'industry_manufacturing.service4': 'Kunststoffe und Polymere',
-            'industry_manufacturing.service5': 'Additive Fertigung',
-            'industry_manufacturing.service6': 'Smart Manufacturing',
+            'industry_manufacturing.service4': 'Verpackungsindustrie',
+            'industry_manufacturing.service5': 'Präzisionsfertigung',
+            'industry_manufacturing.service6': '3D-Druck',
+            'industry_manufacturing.service7': 'Smart Manufacturing',
+            'industry_manufacturing.service8': 'Industrie 4.0',
+            'industry_manufacturing.service9': 'Nachhaltige Produktion',
 
             // Industry sectors - Construction
             'industry_construction.title': 'Bauwesen',
@@ -1542,9 +1829,12 @@ const i18n = {
             'industry_construction.service1': 'Bauunternehmen',
             'industry_construction.service2': 'Entwickler',
             'industry_construction.service3': 'Infrastrukturbau',
-            'industry_construction.service4': 'Grünes Bauen',
-            'industry_construction.service5': 'Bau-Tech',
-            'industry_construction.service6': 'Facility-Services',
+            'industry_construction.service4': 'Tiefbau',
+            'industry_construction.service5': 'Baumaterialhersteller',
+            'industry_construction.service6': 'Architektur und Design',
+            'industry_construction.service7': 'PropTech-Lösungen',
+            'industry_construction.service8': 'Grünes Bauen',
+            'industry_construction.service9': 'Smart Construction',
 
             // Industry sectors - Healthcare
             'industry_healthcare.title': 'Gesundheitswesen',
@@ -1557,9 +1847,12 @@ const i18n = {
             'industry_healthcare.service1': 'Krankenhäuser und Kliniken',
             'industry_healthcare.service2': 'Pharmaunternehmen',
             'industry_healthcare.service3': 'Medizingeräte',
-            'industry_healthcare.service4': 'Telemedizin',
-            'industry_healthcare.service5': 'Diagnostik',
-            'industry_healthcare.service6': 'Healthcare-IT',
+            'industry_healthcare.service4': 'Medizintechnik',
+            'industry_healthcare.service5': 'Diagnostiklabore',
+            'industry_healthcare.service6': 'Pflegedienste',
+            'industry_healthcare.service7': 'Biotechnologie',
+            'industry_healthcare.service8': 'Digital Health',
+            'industry_healthcare.service9': 'Wellness-Dienste',
 
             // Projects page
             'projects.title': 'Projekte',
@@ -1639,6 +1932,7 @@ const i18n = {
             'ma_page.stats_projects_label': 'Erfolgreich abgeschlossene M&A-Projekte',
             'ma_page.stats_industries': '15+',
             'ma_page.stats_industries_label': 'Branchen mit bewährter Expertise',
+            'ma_page.stats_unit': 'Mrd. CZK',
 
             // Corporate Advisory page
             'consulting_page.title': 'Unternehmensberatung & Bewertung',
@@ -1663,6 +1957,10 @@ const i18n = {
             'consulting_page.service6': 'Restrukturierung und Optimierung - Prozesseffizienz',
             'consulting_page.service7': 'Kapitalstrategien - Kapitalbeschaffung, Strukturierung',
             'consulting_page.service8': 'Exit-Strategien - für Gründer, Investoren, Eigentümer',
+            'consulting_page.team_title': 'Multidisziplinäres Team',
+            'consulting_page.team_text': 'Unser Team besteht aus mehr als 30 Fachleuten, darunter Anwälte, Buchhalter, Transaktionsspezialisten und Steuerberater. Diese Expertise ermöglicht es uns, umfassende Beratung in allen Aspekten von Unternehmenstransaktionen und strategischen Entscheidungen anzubieten.',
+            'consulting_page.contact_label': 'Beratung und Kontakt:',
+            'consulting_page.address_label': 'Adresse: Opletalova 39, 110 00 Prag 1',
 
             // About us page
             'about_page.title': 'Über uns',
@@ -1698,7 +1996,74 @@ const i18n = {
             'newsletter.highlight': 'unverbindlichen',
             // Added because HTML uses newsletter.description
             'newsletter.description': 'Füllen Sie unseren <span class="highlight">unverbindlichen</span> Fragebogen aus',
-            
+
+            // Privacy Policy
+            'privacy.page_title': 'Datenschutzrichtlinie und Schutz personenbezogener Daten - ADNP a.s.',
+            'privacy.hero_title': 'Datenschutzrichtlinie und Schutz personenbezogener Daten',
+            'privacy.hero_description': 'Informationen darüber, wie wir Ihre personenbezogenen Daten in Übereinstimmung mit den geltenden Rechtsvorschriften verarbeiten und schützen.',
+
+            'privacy.section1_title': '1. Verantwortlicher für personenbezogene Daten',
+            'privacy.section1_p1': 'Der Verantwortliche für Ihre personenbezogenen Daten ist <strong>ADNP a.s.</strong> mit Sitz in Opletalova 39, 110 00 Prag 1, Firmennummer: 123456789, eingetragen im Handelsregister beim Stadtgericht Prag, Abteilung B, Eintrag 12345.',
+            'privacy.section1_p2': 'Kontaktdaten: E-Mail <a href="mailto:info@adnp.cz">info@adnp.cz</a>',
+
+            'privacy.section2_title': '2. Zweck der Verarbeitung personenbezogener Daten',
+            'privacy.section2_intro': 'Wir verarbeiten Ihre personenbezogenen Daten zu folgenden Zwecken:',
+            'privacy.section2_item1': 'Erbringung von Beratungsdienstleistungen im Bereich Fusionen und Übernahmen',
+            'privacy.section2_item2': 'Kommunikation mit Kunden und Interessenten',
+            'privacy.section2_item3': 'Erfüllung vertraglicher Verpflichtungen',
+            'privacy.section2_item4': 'Einhaltung gesetzlicher Verpflichtungen',
+            'privacy.section2_item5': 'Marketing-Kommunikation (nur mit Einwilligung)',
+
+            'privacy.section3_title': '3. Rechtsgrundlage für die Verarbeitung',
+            'privacy.section3_intro': 'Wir verarbeiten personenbezogene Daten auf der Grundlage von:',
+            'privacy.section3_item1': 'Erfüllung eines Vertrags oder Maßnahmen zur Vertragsvorbereitung',
+            'privacy.section3_item2': 'Berechtigtem Interesse des Verantwortlichen',
+            'privacy.section3_item3': 'Erfüllung gesetzlicher Verpflichtungen',
+            'privacy.section3_item4': 'Einwilligung der betroffenen Person (für Marketingzwecke)',
+
+            'privacy.section4_title': '4. Kategorien verarbeiteter Daten',
+            'privacy.section4_intro': 'Wir verarbeiten folgende Kategorien personenbezogener Daten:',
+            'privacy.section4_item1': 'Identifikations- und Kontaktdaten (Name, Nachname, E-Mail, Telefon)',
+            'privacy.section4_item2': 'Berufliche Daten (Position, Unternehmen)',
+            'privacy.section4_item3': 'Kommunikations- und Besprechungsdaten',
+            'privacy.section4_item4': 'Website-Nutzungsdaten',
+
+            'privacy.section5_title': '5. Aufbewahrungsfrist',
+            'privacy.section5_intro': 'Wir verarbeiten personenbezogene Daten für den Zeitraum, der zur Erreichung des Verarbeitungszwecks erforderlich ist, höchstens jedoch für den gesetzlich vorgeschriebenen Zeitraum. Die spezifischen Aufbewahrungsfristen lauten wie folgt:',
+            'privacy.section5_item1': 'Kundendaten: für die Dauer der Vertragsbeziehung und anschließend 10 Jahre',
+            'privacy.section5_item2': 'Marketingdaten: bis zum Widerruf der Einwilligung',
+            'privacy.section5_item3': 'Kommunikationsdaten: 3 Jahre',
+
+            'privacy.section6_title': '6. Weitergabe von Daten an Dritte',
+            'privacy.section6_intro': 'Wir geben personenbezogene Daten nur in gesetzlich vorgesehenen Fällen oder mit Einwilligung der betroffenen Person weiter. Daten können weitergegeben werden an:',
+            'privacy.section6_item1': 'IT-Dienstleister',
+            'privacy.section6_item2': 'Rechts- und Steuerberater',
+            'privacy.section6_item3': 'Staatliche Behörden aufgrund gesetzlicher Vorschriften',
+
+            'privacy.section7_title': '7. Ihre Rechte',
+            'privacy.section7_intro': 'Im Zusammenhang mit der Verarbeitung personenbezogener Daten haben Sie folgende Rechte:',
+            'privacy.section7_item1': 'Recht auf Zugang zu personenbezogenen Daten',
+            'privacy.section7_item2': 'Recht auf Berichtigung unrichtiger Daten',
+            'privacy.section7_item3': 'Recht auf Löschung von Daten',
+            'privacy.section7_item4': 'Recht auf Einschränkung der Verarbeitung',
+            'privacy.section7_item5': 'Recht auf Datenübertragbarkeit',
+            'privacy.section7_item6': 'Recht auf Widerspruch gegen die Verarbeitung',
+            'privacy.section7_item7': 'Recht auf Widerruf der Einwilligung',
+
+            'privacy.section8_title': '8. Datensicherheit',
+            'privacy.section8_content': 'Wir haben geeignete technische und organisatorische Maßnahmen zum Schutz personenbezogener Daten vor unbefugtem Zugriff, Verlust, Zerstörung oder unbefugter Offenlegung getroffen. Wir überprüfen und aktualisieren unsere Sicherheitsverfahren regelmäßig.',
+
+            'privacy.section9_title': '9. Cookies',
+            'privacy.section9_content': 'Unsere Website verwendet Cookies zur Verbesserung der Benutzererfahrung und zur Analyse des Datenverkehrs. Detaillierte Informationen zur Verwendung von Cookies finden Sie in unserer Cookie-Richtlinie.',
+
+            'privacy.section10_title': '10. Kontakt',
+            'privacy.section10_p1': 'Bei Fragen zur Verarbeitung personenbezogener Daten oder zur Ausübung Ihrer Rechte kontaktieren Sie uns bitte unter: <a href="mailto:info@adnp.cz">info@adnp.cz</a>',
+            'privacy.section10_p2': 'Sie haben auch das Recht, eine Beschwerde beim Amt für Personendatenschutz einzureichen.',
+
+            'privacy.section11_title': '11. Richtlinienänderungen',
+            'privacy.section11_p1': 'Diese Richtlinie kann je nach Änderungen der Rechtsvorschriften oder unserer Verfahren aktualisiert werden. Wir werden Sie über wesentliche Änderungen über unsere Website informieren.',
+            'privacy.section11_p2': '<strong>Zuletzt aktualisiert:</strong> 21. August 2025',
+
             // Chatbot
             'chatbot.title': 'Fragen?',
             'chatbot.placeholder': 'Nachricht eingeben...',
@@ -1723,7 +2088,24 @@ const i18n = {
             'nav.about': 'Про нас',
             'nav.ma': 'Злиття та поглинання',
             'nav.consulting': 'Корпоративне консультування та оцінка',
-            
+
+            // Navigation - Industries detailed
+            'nav.real_estate': 'Нерухомість',
+            'nav.it_full': 'Цифрові технології та IT',
+            'nav.retail_full': 'Торгівля та роздрібна торгівля',
+            'nav.logistics_full': 'Транспорт та логістика',
+            'nav.healthcare': 'Охорона здоров\'я',
+            'nav.gastro_full': 'Гастрономія, харчова промисловість та напої',
+            'nav.crypto': 'Криптовалюти',
+            'nav.finance_full': 'Фінансові послуги',
+            'nav.construction_full': 'Будівництво та девелопмент',
+            'nav.automotive_full': 'Автомобільна промисловість',
+            'nav.materials_full': 'Матеріали та видобувна промисловість',
+            'nav.infrastructure_full': 'Інфраструктура',
+            'nav.b2b_full': 'Корпоративні послуги',
+            'nav.manufacturing_full': 'Промисловість',
+            'nav.energy_full': 'Енергетика та ПММ',
+
             // Hero Section
             'hero.title': 'Створюємо синергії в кожній транзакції',
             'hero.description': 'Ми команда професіоналів, що спеціалізується на злиттях та поглинаннях. Наша експертиза ґрунтується на цифрах, глибокому розумінні та подальших оптимальних рішеннях; ми зробимо все для забезпечення успіху вашого проєкту.',
@@ -1838,11 +2220,12 @@ const i18n = {
             'industry_it.service1': 'Софтверні компанії',
             'industry_it.service2': 'ШІ та машинне навчання',
             'industry_it.service3': 'Хмарні сервіси',
-            'industry_it.service4': 'Фінтех рішення',
-            'industry_it.service5': 'E-commerce платформи',
-            'industry_it.service6': 'Кібербезпека',
-            'industry_it.service7': 'Блокчейн технології',
-            'industry_it.service8': 'IoT та розумні пристрої',
+            'industry_it.service4': 'E-commerce платформи',
+            'industry_it.service5': 'Фінтех рішення',
+            'industry_it.service6': 'Мобільні додатки',
+            'industry_it.service7': 'Кібербезпека',
+            'industry_it.service8': 'IoT технології',
+            'industry_it.service9': 'Блокчейн проєкти',
 
             // Industry sectors - Financial Services
             'industry_finance.title': 'Фінансові послуги',
@@ -1855,9 +2238,12 @@ const i18n = {
             'industry_finance.service1': 'Банки та кредитні установи',
             'industry_finance.service2': 'Страхові компанії',
             'industry_finance.service3': 'Управління активами',
-            'industry_finance.service4': 'Фінтех стартапи',
-            'industry_finance.service5': 'Платіжні системи',
-            'industry_finance.service6': 'Інвестиційні фонди',
+            'industry_finance.service4': 'Фінтех рішення',
+            'industry_finance.service5': 'Платіжні сервіси',
+            'industry_finance.service6': 'Ринки капіталу',
+            'industry_finance.service7': 'Лізинг та факторинг',
+            'industry_finance.service8': 'Пенсійні фонди',
+            'industry_finance.service9': 'Фінансове консультування',
 
             // Industry sectors - Automotive
             'industry_automotive.title': 'Автомобільна промисловість',
@@ -1867,12 +2253,15 @@ const i18n = {
             'industry_automotive.description_text1': 'Автомобільна промисловість переживає найбільшу трансформацію за останні 100 років. Електрифікація, автономне керування та нові концепції мобільності переписують правила гри.',
             'industry_automotive.description_text2': 'Наша експертиза охоплює весь ланцюг створення вартості від виробників до постачальників компонентів і нових сервісів мобільності.',
             'industry_automotive.services_title': 'Наша спеціалізація',
-            'industry_automotive.service1': 'Виробники автомобілів',
-            'industry_automotive.service2': 'Постачальники компонентів',
-            'industry_automotive.service3': 'Електромобільність',
-            'industry_automotive.service4': 'Автономні транспортні засоби',
-            'industry_automotive.service5': 'Сервіси мобільності',
-            'industry_automotive.service6': 'Автомобільні технології',
+            'industry_automotive.service1': 'Автовиробники',
+            'industry_automotive.service2': 'Електромобільність',
+            'industry_automotive.service3': 'Автономні системи',
+            'industry_automotive.service4': 'Постачальники компонентів',
+            'industry_automotive.service5': 'Зарядна інфраструктура',
+            'industry_automotive.service6': 'Автомобільне ПЗ',
+            'industry_automotive.service7': 'Battery технології',
+            'industry_automotive.service8': 'Сервіси мобільності',
+            'industry_automotive.service9': 'Connected cars',
 
             // Industry sectors - Transport & Logistics
             'industry_logistics.title': 'Транспорт і логістика',
@@ -1882,12 +2271,15 @@ const i18n = {
             'industry_logistics.description_text1': 'Логістика представляє критичну інфраструктуру глобальної економіки. E-commerce та діджиталізація змінюють вимоги до швидкості та ефективності доставок.',
             'industry_logistics.description_text2': 'Ми спеціалізуємося на угодах, що включають традиційну логістику та інноваційні технології, такі як автономні транспортні засоби та дрони.',
             'industry_logistics.services_title': 'Що ми покриваємо',
-            'industry_logistics.service1': 'Вантажні перевезення',
-            'industry_logistics.service2': 'Складування та дистрибуція',
-            'industry_logistics.service3': 'E-commerce логістика',
-            'industry_logistics.service4': 'Доставка останньої милі',
-            'industry_logistics.service5': 'Залізничний транспорт',
-            'industry_logistics.service6': 'Авіаційна логістика',
+            'industry_logistics.service1': 'Транспортні компанії',
+            'industry_logistics.service2': 'Складські комплекси',
+            'industry_logistics.service3': 'Supply chain рішення',
+            'industry_logistics.service4': 'Кур\'єрські служби',
+            'industry_logistics.service5': 'Freight forwarding',
+            'industry_logistics.service6': 'Логістичні парки',
+            'industry_logistics.service7': 'E-commerce логістика',
+            'industry_logistics.service8': 'Cross-docking центри',
+            'industry_logistics.service9': 'Холодильна логістика',
 
             // Industry sectors - Energy
             'industry_energy.title': 'Енергетика',
@@ -1898,11 +2290,14 @@ const i18n = {
             'industry_energy.description_text2': 'Наша експертиза охоплює традиційну енергетику та передові технології, такі як накопичення енергії та розумні мережі.',
             'industry_energy.services_title': 'Енергетичні сфери',
             'industry_energy.service1': 'Відновлювані джерела',
-            'industry_energy.service2': 'Сонячна та вітрова енергія',
-            'industry_energy.service3': 'Накопичення енергії',
-            'industry_energy.service4': 'Технології розумних мереж',
-            'industry_energy.service5': 'Енергоефективність',
-            'industry_energy.service6': 'Традиційна енергетика',
+            'industry_energy.service2': 'Електростанції',
+            'industry_energy.service3': 'Енергорозподіл',
+            'industry_energy.service4': 'Нафтогазовий сектор',
+            'industry_energy.service5': 'Energy storage',
+            'industry_energy.service6': 'Smart grid',
+            'industry_energy.service7': 'Водневі технології',
+            'industry_energy.service8': 'Carbon capture',
+            'industry_energy.service9': 'Зелений водень',
 
             // Industry sectors - Food & Gastronomy
             'industry_food.title': 'Гастрономія та харчова промисловість',
@@ -1912,12 +2307,15 @@ const i18n = {
             'industry_food.description_text1': 'Харчовий сектор представляє один з найстабільніших сегментів економіки. Тренди, такі як здорове харчування, органічне та сталe землеробство змінюють ринкову динаміку.',
             'industry_food.description_text2': 'Ми спеціалізуємося на всьому ланцюгу створення вартості від сільського господарства через переробку до дистрибуції та ресторанів.',
             'industry_food.services_title': 'Ми покриваємо сфери',
-            'industry_food.service1': 'Харчові виробники',
-            'industry_food.service2': 'Ресторанні мережі',
-            'industry_food.service3': 'Органічні виробники',
-            'industry_food.service4': 'Харчові технології',
-            'industry_food.service5': 'Дистрибуція харчових продуктів',
-            'industry_food.service6': 'Сільськогосподарські підприємства',
+            'industry_food.service1': 'Ресторани та мережі',
+            'industry_food.service2': 'Харчове виробництво',
+            'industry_food.service3': 'Виробники напоїв',
+            'industry_food.service4': 'Food-tech стартапи',
+            'industry_food.service5': 'Кейтерингові послуги',
+            'industry_food.service6': 'Пивоварна справа',
+            'industry_food.service7': 'Мережі кав\'ярень',
+            'industry_food.service8': 'Food delivery',
+            'industry_food.service9': 'Organic food',
 
             // Industry sectors - Infrastructure
             'industry_infrastructure.title': 'Інфраструктура',
@@ -1930,9 +2328,12 @@ const i18n = {
             'industry_infrastructure.service1': 'Транспортна інфраструктура',
             'industry_infrastructure.service2': 'Телекомунікації',
             'industry_infrastructure.service3': 'Водне господарство',
-            'industry_infrastructure.service4': 'Розумні міста',
-            'industry_infrastructure.service5': 'Громадські будівлі',
-            'industry_infrastructure.service6': 'Комунальні послуги',
+            'industry_infrastructure.service4': 'Управління відходами',
+            'industry_infrastructure.service5': 'Енергомережі',
+            'industry_infrastructure.service6': 'Smart city рішення',
+            'industry_infrastructure.service7': 'Цифрова інфраструктура',
+            'industry_infrastructure.service8': 'PPP проєкти',
+            'industry_infrastructure.service9': 'Зелена інфраструктура',
 
             // Industry sectors - Cryptocurrency
             'industry_crypto.title': 'Криптовалюти',
@@ -1943,11 +2344,14 @@ const i18n = {
             'industry_crypto.description_text2': 'Ми спеціалізуємося на угодах у цьому високоспеціалізованому та регуляторно складному середовищі.',
             'industry_crypto.services_title': 'Крипто спеціалізація',
             'industry_crypto.service1': 'Криптобіржі',
-            'industry_crypto.service2': 'DeFi протоколи',
-            'industry_crypto.service3': 'NFT проєкти',
-            'industry_crypto.service4': 'Блокчейн стартапи',
-            'industry_crypto.service5': 'Майнінгові операції',
-            'industry_crypto.service6': 'Web3 додатки',
+            'industry_crypto.service2': 'Блокчейн проєкти',
+            'industry_crypto.service3': 'DeFi протоколи',
+            'industry_crypto.service4': 'NFT платформи',
+            'industry_crypto.service5': 'Майнінгові компанії',
+            'industry_crypto.service6': 'Wallet сервіси',
+            'industry_crypto.service7': 'Крипто платежі',
+            'industry_crypto.service8': 'Web3 додатки',
+            'industry_crypto.service9': 'Stablecoin проєкти',
 
             // Industry sectors - Materials & Mining
             'industry_materials.title': 'Матеріали та гірничодобувна промисловість',
@@ -1957,12 +2361,15 @@ const i18n = {
             'industry_materials.description_text1': 'Сектор матеріалів і гірничодобування забезпечує базову сировину для більшості промислових галузей. Сталість і циркулярна економіка змінюють підходи до видобутку та переробки.',
             'industry_materials.description_text2': 'Ми спеціалізуємося на угодах у традиційній та сучасній матеріальній промисловості, включаючи технології переробки.',
             'industry_materials.services_title': 'Матеріальні сфери',
-            'industry_materials.service1': 'Гірничодобувні компанії',
+            'industry_materials.service1': 'Видобуток сировини',
             'industry_materials.service2': 'Металургійна промисловість',
-            'industry_materials.service3': 'Хімічна промисловість',
-            'industry_materials.service4': 'Технології переробки',
-            'industry_materials.service5': 'Будівельні матеріали',
-            'industry_materials.service6': 'Передові матеріали',
+            'industry_materials.service3': 'Будівельні матеріали',
+            'industry_materials.service4': 'Хімічна промисловість',
+            'industry_materials.service5': 'Технології переробки',
+            'industry_materials.service6': 'Спеціальні матеріали',
+            'industry_materials.service7': 'Композитні матеріали',
+            'industry_materials.service8': 'Критичні метали',
+            'industry_materials.service9': 'Зелені матеріали',
 
             // Industry sectors - Retail & Trade
             'industry_retail.title': 'Торгівля та роздрібна торгівля',
@@ -1972,12 +2379,15 @@ const i18n = {
             'industry_retail.description_text1': 'Роздрібна торгівля проходить фундаментальну трансформацію. Омніканальний підхід, e-commerce та нові технології, такі як AR/VR, змінюють клієнтський досвід.',
             'industry_retail.description_text2': 'Наша експертиза охоплює традиційну роздрібну торгівлю та передові e-commerce рішення.',
             'industry_retail.services_title': 'Сфери роздрібної торгівлі',
-            'industry_retail.service1': 'Роздрібні мережі',
-            'industry_retail.service2': 'E-commerce платформи',
-            'industry_retail.service3': 'Модна роздрібна торгівля',
+            'industry_retail.service1': 'E-commerce платформи',
+            'industry_retail.service2': 'Роздрібні мережі',
+            'industry_retail.service3': 'Дистриб\'юторські мережі',
             'industry_retail.service4': 'Торгові центри',
-            'industry_retail.service5': 'Люксові бренди',
-            'industry_retail.service6': 'D2C бренди',
+            'industry_retail.service5': 'Fashion роздріб',
+            'industry_retail.service6': 'Харчові мережі',
+            'industry_retail.service7': 'Франшизи',
+            'industry_retail.service8': 'Омніканальні стратегії',
+            'industry_retail.service9': 'Marketplace платформи',
 
             // Industry sectors - Business Services
             'industry_business.title': 'Корпоративні послуги',
@@ -1987,12 +2397,15 @@ const i18n = {
             'industry_business.description_text1': 'Корпоративні послуги дозволяють компаніям зосередитися на своєму основному бізнесі. Діджиталізація та автоматизація змінюють природу багатьох послуг.',
             'industry_business.description_text2': 'Ми спеціалізуємося на угодах у традиційних та технологічно підтримуваних корпоративних послугах.',
             'industry_business.services_title': 'Корпоративні послуги',
-            'industry_business.service1': 'ІТ аутсорсинг',
-            'industry_business.service2': 'HR послуги',
+            'industry_business.service1': 'Консалтингові послуги',
+            'industry_business.service2': 'ІТ аутсорсинг',
             'industry_business.service3': 'Бухгалтерські послуги',
-            'industry_business.service4': 'Юридичні послуги',
+            'industry_business.service4': 'HR сервіси',
             'industry_business.service5': 'Маркетингові агенції',
-            'industry_business.service6': 'Управління об\'єктами',
+            'industry_business.service6': 'Юридичні послуги',
+            'industry_business.service7': 'Служби безпеки',
+            'industry_business.service8': 'Business consulting',
+            'industry_business.service9': 'Цифрові послуги',
 
             // Industry sectors - Manufacturing
             'industry_manufacturing.title': 'Промисловість',
@@ -2005,9 +2418,12 @@ const i18n = {
             'industry_manufacturing.service1': 'Машинобудування',
             'industry_manufacturing.service2': 'Електроніка',
             'industry_manufacturing.service3': 'Текстильна промисловість',
-            'industry_manufacturing.service4': 'Пластики та полімери',
-            'industry_manufacturing.service5': 'Адитивне виробництво',
-            'industry_manufacturing.service6': 'Розумне виробництво',
+            'industry_manufacturing.service4': 'Пакувальна промисловість',
+            'industry_manufacturing.service5': 'Прецизійне виробництво',
+            'industry_manufacturing.service6': '3D друк',
+            'industry_manufacturing.service7': 'Smart manufacturing',
+            'industry_manufacturing.service8': 'Індустрія 4.0',
+            'industry_manufacturing.service9': 'Сталe виробництво',
 
             // Industry sectors - Construction
             'industry_construction.title': 'Будівництво',
@@ -2020,9 +2436,12 @@ const i18n = {
             'industry_construction.service1': 'Будівельні компанії',
             'industry_construction.service2': 'Девелопери',
             'industry_construction.service3': 'Інфраструктурне будівництво',
-            'industry_construction.service4': 'Зелене будівництво',
-            'industry_construction.service5': 'Будівельні технології',
-            'industry_construction.service6': 'Обслуговування об\'єктів',
+            'industry_construction.service4': 'Підземне будівництво',
+            'industry_construction.service5': 'Виробники матеріалів',
+            'industry_construction.service6': 'Архітектура та дизайн',
+            'industry_construction.service7': 'PropTech рішення',
+            'industry_construction.service8': 'Зелене будівництво',
+            'industry_construction.service9': 'Smart construction',
 
             // Industry sectors - Healthcare
             'industry_healthcare.title': 'Охорона здоров\'я',
@@ -2035,9 +2454,12 @@ const i18n = {
             'industry_healthcare.service1': 'Лікарні та клініки',
             'industry_healthcare.service2': 'Фармацевтичні компанії',
             'industry_healthcare.service3': 'Медичні пристрої',
-            'industry_healthcare.service4': 'Телемедицина',
-            'industry_healthcare.service5': 'Діагностика',
-            'industry_healthcare.service6': 'ІТ охорони здоров\'я',
+            'industry_healthcare.service4': 'Медичні технології',
+            'industry_healthcare.service5': 'Діагностичні лабораторії',
+            'industry_healthcare.service6': 'Послуги догляду',
+            'industry_healthcare.service7': 'Біотехнології',
+            'industry_healthcare.service8': 'Digital health',
+            'industry_healthcare.service9': 'Wellness послуги',
 
             // Projects page
             'projects.title': 'Проєкти',
@@ -2117,6 +2539,7 @@ const i18n = {
             'ma_page.stats_projects_label': 'Успішно завершених M&A проєктів',
             'ma_page.stats_industries': '15+',
             'ma_page.stats_industries_label': 'Галузей з доведеною експертизою',
+            'ma_page.stats_unit': 'млрд CZK',
 
             // Corporate Advisory page
             'consulting_page.title': 'Корпоративне консультування та оцінка',
@@ -2141,6 +2564,10 @@ const i18n = {
             'consulting_page.service6': 'Реструктуризація та оптимізація - ефективність процесів',
             'consulting_page.service7': 'Капітальні стратегії - залучення капіталу, структурування',
             'consulting_page.service8': 'Exit стратегії - для засновників, інвесторів, власників',
+            'consulting_page.team_title': 'Мультидисциплінарна команда',
+            'consulting_page.team_text': 'Наша команда складається з понад 30 професіоналів, включаючи юристів, бухгалтерів, спеціалістів з транзакцій та податкових консультантів. Ця експертиза дозволяє нам надавати комплексні консультації у всіх аспектах корпоративних транзакцій та стратегічних рішень.',
+            'consulting_page.contact_label': 'Консультація та контакт:',
+            'consulting_page.address_label': 'Адреса: Opletalova 39, 110 00 Прага 1',
 
             // About us page
             'about_page.title': 'Про нас',
@@ -2176,7 +2603,74 @@ const i18n = {
             'newsletter.highlight': 'необов\'язковий',
             // Added because HTML uses newsletter.description
             'newsletter.description': 'Заповніть наш <span class="highlight">необов\'язковий</span> опитувальник',
-            
+
+            // Privacy Policy
+            'privacy.page_title': 'Політика конфіденційності та захист персональних даних - ADNP a.s.',
+            'privacy.hero_title': 'Політика конфіденційності та захист персональних даних',
+            'privacy.hero_description': 'Інформація про те, як ми обробляємо та захищаємо ваші персональні дані відповідно до чинного законодавства.',
+
+            'privacy.section1_title': '1. Контролер персональних даних',
+            'privacy.section1_p1': 'Контролером ваших персональних даних є компанія <strong>ADNP a.s.</strong> з зареєстрованим офісом за адресою Opletalova 39, 110 00 Прага 1, ідентифікаційний номер компанії: 123456789, зареєстрована в Торговому реєстрі, що ведеться Муніципальним судом у Празі, розділ B, вставка 12345.',
+            'privacy.section1_p2': 'Контактні дані: email <a href="mailto:info@adnp.cz">info@adnp.cz</a>',
+
+            'privacy.section2_title': '2. Мета обробки персональних даних',
+            'privacy.section2_intro': 'Ми обробляємо ваші персональні дані для наступних цілей:',
+            'privacy.section2_item1': 'Надання консультаційних послуг у сфері злиттів та поглинань',
+            'privacy.section2_item2': 'Комунікація з клієнтами та потенційними клієнтами',
+            'privacy.section2_item3': 'Виконання договірних зобов\'язань',
+            'privacy.section2_item4': 'Дотримання юридичних зобов\'язань',
+            'privacy.section2_item5': 'Маркетингова комунікація (тільки за згодою)',
+
+            'privacy.section3_title': '3. Правова основа для обробки',
+            'privacy.section3_intro': 'Ми обробляємо персональні дані на підставі:',
+            'privacy.section3_item1': 'Виконання договору або кроків, що ведуть до укладення договору',
+            'privacy.section3_item2': 'Законного інтересу контролера',
+            'privacy.section3_item3': 'Дотримання юридичних зобов\'язань',
+            'privacy.section3_item4': 'Згоди суб\'єкта даних (для маркетингових цілей)',
+
+            'privacy.section4_title': '4. Категорії оброблюваних даних',
+            'privacy.section4_intro': 'Ми обробляємо наступні категорії персональних даних:',
+            'privacy.section4_item1': 'Ідентифікаційні та контактні дані (ім\'я, прізвище, email, телефон)',
+            'privacy.section4_item2': 'Професійні дані (посада, компанія)',
+            'privacy.section4_item3': 'Дані про комунікацію та зустрічі',
+            'privacy.section4_item4': 'Дані про використання веб-сайту',
+
+            'privacy.section5_title': '5. Термін зберігання',
+            'privacy.section5_intro': 'Ми обробляємо персональні дані протягом періоду, необхідного для досягнення мети обробки, але не довше, ніж період, встановлений законодавством. Конкретні терміни зберігання наступні:',
+            'privacy.section5_item1': 'Клієнтські дані: протягом дії договірних відносин та наступних 10 років',
+            'privacy.section5_item2': 'Маркетингові дані: до відкликання згоди',
+            'privacy.section5_item3': 'Дані про комунікацію: 3 роки',
+
+            'privacy.section6_title': '6. Розкриття даних третім особам',
+            'privacy.section6_intro': 'Ми розкриваємо персональні дані тільки у випадках, передбачених законом, або за згодою суб\'єкта даних. Дані можуть бути розкриті:',
+            'privacy.section6_item1': 'Постачальникам IT-послуг',
+            'privacy.section6_item2': 'Юридичним та податковим консультантам',
+            'privacy.section6_item3': 'Державним органам на підставі законодавства',
+
+            'privacy.section7_title': '7. Ваші права',
+            'privacy.section7_intro': 'Стосовно обробки персональних даних ви маєте наступні права:',
+            'privacy.section7_item1': 'Право на доступ до персональних даних',
+            'privacy.section7_item2': 'Право на виправлення неточних даних',
+            'privacy.section7_item3': 'Право на видалення даних',
+            'privacy.section7_item4': 'Право на обмеження обробки',
+            'privacy.section7_item5': 'Право на переносимість даних',
+            'privacy.section7_item6': 'Право заперечувати проти обробки',
+            'privacy.section7_item7': 'Право відкликати згоду',
+
+            'privacy.section8_title': '8. Безпека даних',
+            'privacy.section8_content': 'Ми впровадили відповідні технічні та організаційні заходи для захисту персональних даних від несанкціонованого доступу, втрати, знищення або несанкціонованого розкриття. Ми регулярно переглядаємо та оновлюємо наші процедури безпеки.',
+
+            'privacy.section9_title': '9. Файли cookie',
+            'privacy.section9_content': 'Наш веб-сайт використовує файли cookie для покращення користувацького досвіду та аналізу трафіку. Детальну інформацію про використання файлів cookie можна знайти в нашій політиці cookie.',
+
+            'privacy.section10_title': '10. Контакт',
+            'privacy.section10_p1': 'Якщо у вас є питання щодо обробки персональних даних або ви бажаєте скористатися своїми правами, будь ласка, зв\'яжіться з нами: <a href="mailto:info@adnp.cz">info@adnp.cz</a>',
+            'privacy.section10_p2': 'Ви також маєте право подати скаргу до Управління захисту персональних даних.',
+
+            'privacy.section11_title': '11. Зміни політики',
+            'privacy.section11_p1': 'Ця політика може бути оновлена в залежності від змін у законодавстві або наших процедурах. Ми повідомимо вас про значні зміни через наш веб-сайт.',
+            'privacy.section11_p2': '<strong>Останнє оновлення:</strong> 21 серпня 2025 року',
+
             // Chatbot
             'chatbot.title': 'Є питання?',
             'chatbot.placeholder': 'Напишіть ваше повідомлення...',
@@ -2318,4 +2812,4 @@ const i18n = {
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     i18n.init();
-});
+});n
